@@ -1,0 +1,89 @@
+// variables
+
+$max_container: 1100px;
+
+$font_Merriweather: 'Merriweather', serif;
+
+// header
+
+.container {
+    width: $max_container;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 35px;
+    background-color: #080808;
+    z-index: 20;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 1100px;
+        height: 35px;
+        .menu {
+            display: flex;
+            align-items: center;
+            width: 470px;
+            height: 35px;
+            &__list {
+                display: flex;
+            }
+            &__list li {
+                margin-right: 61px;
+            }
+            &__list a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                font-size: 13px;
+                letter-spacing: 2px;
+            }
+            &__list a:hover {
+                color: #cecece;
+            }
+        }
+        .header__widgets_and_search_button {
+            display: flex;
+            .header__widgets {
+                display: flex;
+                align-items: center;
+                width: 168px;
+                & li {
+                    display: flex;
+                    align-items: center;
+                    width: 24px;
+                    height: 26px;
+                    margin: 0 6px;
+                    img {
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+            }
+            .header__search_button {
+                display: flex;
+                align-items: center;
+                width: 38px;
+                height: 35px;
+                cursor: pointer;
+                &_img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 38px;
+                    height: 25px;
+                    border-left: 1px solid #6b6b6b;
+                    border-right: 1px solid #6b6b6b;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
