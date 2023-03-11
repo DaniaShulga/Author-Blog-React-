@@ -9,7 +9,7 @@ const Main = (props: Props) => {
             <div className="container">
                 <div className="logo_wrapper">
                     <div className="logo_img">
-                        <a href="#">
+                        <a href="./Header.tsx">
                             <img src={header_logo} alt="header logo" />
                         </a>
                     </div>

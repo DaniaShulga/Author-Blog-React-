@@ -15,16 +15,16 @@ const Header = (props: Props) => {
                     <div className="menu">
                         <ul className="menu__list">
                             <li>
-                                <a href="#">home</a>
+                                <a href="./Header.tsx">home</a>
                             </li>
                             <li>
-                                <a href="#">about</a>
+                                <a href="./Header.tsx">about</a>
                             </li>
                             <li>
-                                <a href="#">articles</a>
+                                <a href="./Header.tsx">articles</a>
                             </li>
                             <li>
-                                <a href="#">contact</a>
+                                <a href="./Header.tsx">contact</a>
                             </li>
                         </ul>
                     </div>
@@ -32,22 +32,22 @@ const Header = (props: Props) => {
                     <div className="header__widgets_and_search_button">
                         <ul className="header__widgets">
                             <li>
-                                <a href="#">
+                                <a href="./Header.tsx">
                                     <img src={tumblr} alt="tumblr icon" />
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="./Header.tsx">
                                     <img src={twitter} alt="twitter icon" />
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="./Header.tsx">
                                     <img src={facebook} alt="facebook icon" />
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="./Header.tsx">
                                     <img src={instagram} alt="instagram icon" />
                                 </a>
                             </li>
