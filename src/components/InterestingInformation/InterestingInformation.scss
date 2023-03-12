@@ -1,0 +1,161 @@
+$font_Satisfy: 'Satisfy';
+$font_Merriweather: 'Merriweather', serif;
+
+.main {
+    .logo_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 158px;
+        padding-top: 30px;
+        .logo_img {
+            width: 397px;
+            height: 108px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .interesting_information {
+        display: flex;
+        justify-content: space-between;
+        width: 1100px;
+        height: 117px;
+        margin-bottom: 108px;
+
+        .interesting_information_block_1 {
+            display: flex;
+            width: 353px;
+            height: 117px;
+            background-color: #f7f7f7;
+            .interesting_information_img {
+                width: 117px;
+                height: 117px;
+                img {
+                    width: 117px;
+                }
+            }
+            .interesting_information_text_and_btn {
+                margin: 0 auto;
+                text-align: center;
+                .interesting_information_text {
+                    h3 {
+                        font-family: $font_Satisfy;
+                        font-size: 36px;
+                        margin-top: 26px;
+                        margin-bottom: 7px;
+                    }
+                }
+                .interesting_information_btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .inf_btn {
+                        display: flex;
+                        align-items: center;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        font-size: 12px;
+                        letter-spacing: 3px;
+                        color: rgb(48, 48, 48);
+                    }
+                    .inf_btn:hover {
+                        color: rgb(101, 101, 101);
+                        cursor: pointer;
+                    }
+                    .inf_btn::after {
+                        content: '';
+                        // background: url('../../assets/interesting_information_arrow-right.svg')
+                        //     no-repeat;
+
+                        width: 17px;
+                        height: 17px;
+                        margin-left: 9px;
+                    }
+                }
+            }
+        }
+
+        .interesting_information_block_2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 353px;
+            height: 117px;
+            // background-image: url('interesting_information_img_3.jpg');
+            background-size: 353px 117px;
+
+            .interesting_information_border {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 342px;
+                height: 105px;
+                border: 1px solid white;
+                .interesting_information_text {
+                    h3 {
+                        font-family: $font_Merriweather;
+                        font-size: 28px;
+                        font-weight: 400;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .interesting_information_block_3 {
+            display: flex;
+            width: 353px;
+            height: 117px;
+            background-color: #f7f7f7;
+            background-color: #f7f7f7;
+            .interesting_information_img {
+                width: 117px;
+                height: 117px;
+                img {
+                    width: 117px;
+                    height: 117px;
+                }
+            }
+            .interesting_information_text_and_btn {
+                margin: 0 auto;
+                text-align: center;
+                .interesting_information_text {
+                    h3 {
+                        font-family: $font_Satisfy;
+                        font-size: 36px;
+                        margin-top: 26px;
+                        margin-bottom: 7px;
+                    }
+                }
+                .interesting_information_btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .inf_btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        font-size: 12px;
+                        letter-spacing: 3px;
+                        color: rgb(48, 48, 48);
+                    }
+                    .inf_btn:hover {
+                        color: rgb(101, 101, 101);
+                        cursor: pointer;
+                    }
+                    .inf_btn::after {
+                        content: '';
+                        // background: url('/src/assets/interesting_information_arrow-right.svg')
+                        //     no-repeat;
+                        width: 17px;
+                        height: 17px;
+                        margin-left: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
