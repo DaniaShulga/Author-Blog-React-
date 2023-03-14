@@ -16,7 +16,7 @@ const ArticlesItem = ({ title, description, date, image }: Props) => {
             </div>
 
             <div className="article_text_inner">
-                <a href="">{title}</a>
+                <a href="component/Main/Main.tsx">{title}</a>
 
                 <p className="article_text_1">{description}</p>
                 <p className="article_text_2">{date} </p>

@@ -9,7 +9,10 @@ const InterestingInformation = (props: Props) => {
         <div className="interesting_information">
             <div className="interesting_information_block_1">
                 <div className="interesting_information_img">
-                    <img src={interesting_information_img_1} alt="" />
+                    <img
+                        src={interesting_information_img_1}
+                        alt="interesting information img 1"
+                    />
                 </div>
 
                 <div className="interesting_information_text_and_btn">
@@ -33,7 +36,10 @@ const InterestingInformation = (props: Props) => {
 
             <div className="interesting_information_block_3">
                 <div className="interesting_information_img">
-                    <img src={interesting_information_img_2} alt="" />
+                    <img
+                        src={interesting_information_img_2}
+                        alt="interesting information img 2"
+                    />
                 </div>
 
                 <div className="interesting_information_text_and_btn">
