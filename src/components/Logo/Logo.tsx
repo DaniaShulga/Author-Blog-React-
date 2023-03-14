@@ -1,4 +1,5 @@
 import header_logo from 'assets/header_logo.png'
+import './Logo.scss'
 
 type Props = {}
 const Logo = (props: Props) => {

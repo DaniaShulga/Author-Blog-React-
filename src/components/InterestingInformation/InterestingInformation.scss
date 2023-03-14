@@ -66,7 +66,7 @@ $font_Merriweather: 'Merriweather', serif;
                     .inf_btn::after {
                         content: '';
                         // background: url('../../assets/interesting_information_arrow-right.svg')
-                        //     no-repeat;
+                        // no-repeat;
 
                         width: 17px;
                         height: 17px;
@@ -82,7 +82,7 @@ $font_Merriweather: 'Merriweather', serif;
             justify-content: center;
             width: 353px;
             height: 117px;
-            // background-image: url('interesting_information_img_3.jpg');
+            // background-image: url('/public/images/interesting_information_img_3.jpg') no-repeat;
             background-size: 353px 117px;
 
             .interesting_information_border {
