@@ -32,7 +32,7 @@ const Aside = (props: Props) => {
                     </div>
                     <ul className="author_socials">
                         <li>
-                            <a href="">
+                            <a href="./Header.tsx">
                                 <img
                                     src="/images/twitter_icon_black.svg"
                                     alt="twitter icon"
@@ -40,7 +40,7 @@ const Aside = (props: Props) => {
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="./Header.tsx">
                                 <img
                                     src="/images/facebook_icon_black.svg"
                                     alt="facebook icon"
@@ -48,7 +48,7 @@ const Aside = (props: Props) => {
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="./Header.tsx">
                                 <img
                                     src="/images/instagram_icon_black.svg"
                                     alt="instagram icon"
@@ -111,25 +111,25 @@ const Aside = (props: Props) => {
 
                 <ul className="categories_list">
                     <li>
-                        <a href="">art</a>
+                        <a href="./Header.tsx">art</a>
                     </li>
                     <li>
-                        <a href="">books</a>
+                        <a href="./Header.tsx">books</a>
                     </li>
                     <li>
-                        <a href="">creation</a>
+                        <a href="./Header.tsx">creation</a>
                     </li>
                     <li>
-                        <a href="">knowledge</a>
+                        <a href="./Header.tsx">knowledge</a>
                     </li>
                     <li>
-                        <a href="">recommendations</a>
+                        <a href="./Header.tsx">recommendations</a>
                     </li>
                     <li>
-                        <a href="">wisdom</a>
+                        <a href="./Header.tsx">wisdom</a>
                     </li>
                     <li>
-                        <a href="">writing</a>
+                        <a href="./Header.tsx">writing</a>
                     </li>
                 </ul>
             </div>
@@ -140,14 +140,14 @@ const Aside = (props: Props) => {
                 </div>
 
                 <div className="tags_items">
-                    <a href="">advice,</a>
-                    <a href="">art,</a>
-                    <a href="">books,</a>
-                    <a href="">inspo,</a>
-                    <a href="">lists,</a> <br />
-                    <a href="">new,</a>
-                    <a href="">sugestions,</a>
-                    <a href="">writing</a>
+                    <a href="./Header.tsx">advice,</a>
+                    <a href="./Header.tsx">art,</a>
+                    <a href="./Header.tsx">books,</a>
+                    <a href="./Header.tsx">inspo,</a>
+                    <a href="./Header.tsx">lists,</a> <br />
+                    <a href="./Header.tsx">new,</a>
+                    <a href="./Header.tsx">sugestions,</a>
+                    <a href="./Header.tsx">writing</a>
                 </div>
             </div>
         </div>
