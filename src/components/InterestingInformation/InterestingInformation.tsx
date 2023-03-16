@@ -26,7 +26,13 @@ const InterestingInformation = (props: Props) => {
                 </div>
             </div>
 
-            <div className="interesting_information_block_2">
+            <div
+                className="interesting_information_block_2"
+                style={{
+                    backgroundImage:
+                        'url(/images/interesting_information_img_3.jpg)',
+                }}
+            >
                 <div className="interesting_information_border">
                     <div className="interesting_information_text">
                         <h3>Published Books</h3>
