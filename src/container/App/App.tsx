@@ -1,13 +1,22 @@
 import Footer from 'container/Footer/Footer'
 import Header from 'container/Header/Header'
-import Main from 'container/Main/Main'
+import About from 'pages/About/About'
+import Home from 'pages/Home/Home'
+import { Route, Routes } from 'react-router-dom'
 
 type Props = {}
 const App = (props: Props) => {
     return (
         <>
             <Header />
-            <Main />
+            <main className="main">
+                <div className="container">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                    </Routes>
+                </div>
+            </main>
             <Footer />
         </>
     )

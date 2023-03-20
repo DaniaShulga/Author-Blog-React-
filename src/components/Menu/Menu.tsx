@@ -1,9 +1,5 @@
-// import tumblr from 'images/tumblr_icon.svg'
-// import twitter from 'assets/twitter_icon.svg'
-// import facebook from 'assets/facebook_icon.svg'
-// import instagram from 'assets/instagram_icon.svg'
-// import search from 'assets/search_icon.svg'
 import './Menu.scss'
+import MenuItem from './MenuItem'
 import './Reset.scss'
 
 type Props = {}
@@ -13,16 +9,16 @@ const Menu = (props: Props) => {
             <div className="menu">
                 <ul className="menu__list">
                     <li>
-                        <a href="./Header.tsx">home</a>
+                        <MenuItem to="/">home</MenuItem>
                     </li>
                     <li>
-                        <a href="./Header.tsx">about</a>
+                        <MenuItem to="/about">about</MenuItem>
                     </li>
                     <li>
-                        <a href="./Header.tsx">articles</a>
+                        <MenuItem to="/articles">articles</MenuItem>
                     </li>
                     <li>
-                        <a href="./Header.tsx">contact</a>
+                        <MenuItem to="/contact">contact</MenuItem>
                     </li>
                 </ul>
             </div>
