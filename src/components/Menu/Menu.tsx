@@ -1,8 +1,10 @@
-import tumblr from 'assets/tumblr_icon.svg'
-import twitter from 'assets/twitter_icon.svg'
-import facebook from 'assets/facebook_icon.svg'
-import instagram from 'assets/instagram_icon.svg'
-import search from 'assets/search_icon.svg'
+// import tumblr from 'images/tumblr_icon.svg'
+// import twitter from 'assets/twitter_icon.svg'
+// import facebook from 'assets/facebook_icon.svg'
+// import instagram from 'assets/instagram_icon.svg'
+// import search from 'assets/search_icon.svg'
+import './Menu.scss'
+import './Reset.scss'
 
 type Props = {}
 const Menu = (props: Props) => {
@@ -29,29 +31,41 @@ const Menu = (props: Props) => {
                 <ul className="header__widgets">
                     <li>
                         <a href="./Header.tsx">
-                            <img src={tumblr} alt="tumblr icon" />
+                            <img
+                                src="./images/tumblr_icon.svg"
+                                alt="tumblr icon"
+                            />
                         </a>
                     </li>
                     <li>
                         <a href="./Header.tsx">
-                            <img src={twitter} alt="twitter icon" />
+                            <img
+                                src="./images/twitter_icon.svg"
+                                alt="twitter icon"
+                            />
                         </a>
                     </li>
                     <li>
                         <a href="./Header.tsx">
-                            <img src={facebook} alt="facebook icon" />
+                            <img
+                                src="./images/facebook_icon.svg"
+                                alt="facebook icon"
+                            />
                         </a>
                     </li>
                     <li>
                         <a href="./Header.tsx">
-                            <img src={instagram} alt="instagram icon" />
+                            <img
+                                src="./images/instagram_icon.svg"
+                                alt="instagram icon"
+                            />
                         </a>
                     </li>
                 </ul>
 
                 <div className="header__search_button">
                     <div className="header__search_button_img">
-                        <img src={search} alt="search icon" />
+                        <img src="./images/search_icon.svg" alt="search icon" />
                     </div>
                 </div>
             </div>

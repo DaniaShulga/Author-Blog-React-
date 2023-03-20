@@ -19,9 +19,6 @@ $font_Merriweather: 'Merriweather', serif;
     height: 35px;
     background-color: #080808;
     z-index: 20;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
     .nav {
         display: flex;
         justify-content: space-between;
@@ -47,6 +44,7 @@ $font_Merriweather: 'Merriweather', serif;
             }
             &__list a:hover {
                 color: #cecece;
+                transition: color 0.2s ease-in-out;
             }
         }
         .header__widgets_and_search_button {

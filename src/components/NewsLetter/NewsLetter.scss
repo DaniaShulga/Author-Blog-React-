@@ -1,0 +1,60 @@
+$max_container: 1100px;
+
+$font_Merriweather: 'Merriweather', serif;
+
+$font_Satisfy: 'Satisfy';
+
+.newsletter {
+    margin-bottom: 100px;
+    .newsletter_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 733px;
+        height: 140px;
+        // background: url('images/newsletter_img.jpg') center center no-repeat;
+        background-size: cover;
+        .newsletter_border {
+            display: flex;
+            align-items: center;
+            width: 723px;
+            height: 130px;
+            border: 1px solid white;
+            .newsletter_title {
+                color: #ffffff;
+                margin-left: 23px;
+                margin-right: 36px;
+                font-family: $font_Satisfy;
+                font-size: 36px;
+            }
+            .newsletter_search {
+                display: flex;
+                width: 309px;
+                height: 50px;
+                border: 1px solid white;
+                input {
+                    height: 48px;
+                    width: 253px;
+                    background: none;
+                    border: none;
+                }
+                input::placeholder {
+                    color: #ffffff;
+                    padding-left: 17px;
+                }
+                button {
+                    width: 54px;
+                    height: 50px;
+                    background: none;
+                    border: none;
+                    background-color: #ffffff;
+                    cursor: pointer;
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
