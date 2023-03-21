@@ -1,0 +1,87 @@
+$font_Merriweather: 'Merriweather', serif;
+
+.contacts_block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 49px;
+    margin-bottom: 120px;
+    .contacts_image {
+        width: 465px;
+        height: 465px;
+        .image_1 {
+            width: 465px;
+            height: 465px;
+        }
+    }
+
+    .contacts_wrapper {
+        width: 611px;
+        height: 465px;
+        .contacts_form {
+            padding-left: 13%;
+            .contacts_text_1 {
+                color: #080808;
+                font-family: $font_Merriweather;
+                font-size: 40px;
+                font-weight: 400;
+                margin-bottom: 13px;
+            }
+            .contacts_text_2 {
+                color: #6b6b6b;
+                font-size: 17px;
+                line-height: 29px;
+                font-weight: 400;
+                margin-bottom: 28px;
+            }
+            .input_1 {
+                width: 250px;
+                height: 40px;
+                margin-right: 10px;
+                margin-bottom: 25px;
+                border: 1px solid #080808;
+            }
+            .input_1::placeholder {
+                padding-left: 15px;
+            }
+            .input_2 {
+                width: 250px;
+                height: 40px;
+                border: 1px solid #080808;
+            }
+            .input_2::placeholder {
+                padding-left: 15px;
+            }
+            .text_area {
+                .text_area_block {
+                    width: 494px;
+                    height: 167px;
+                    color: #656565;
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: 0;
+                    padding-top: 20px;
+                    padding-left: 30px;
+                    border: 1px solid #080808;
+                    margin-bottom: 19px;
+                }
+            }
+            .contacts_button {
+                width: 212px;
+                height: 49px;
+                background-color: #080808;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                font-family: 'Open Sans', sans-serif;
+            }
+            .contacts_button:hover {
+                background-color: #ffffff;
+                color: #080808;
+                border: 1px solid #080808;
+                transition: all 0.1s linear;
+            }
+        }
+    }
+}

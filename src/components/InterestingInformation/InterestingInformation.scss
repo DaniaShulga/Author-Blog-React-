@@ -2,20 +2,6 @@ $font_Satisfy: 'Satisfy';
 $font_Merriweather: 'Merriweather', serif;
 
 .main {
-    .logo_wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 158px;
-        padding-top: 30px;
-        .logo_img {
-            width: 397px;
-            height: 108px;
-            img {
-                width: 100%;
-            }
-        }
-    }
     .interesting_information {
         display: flex;
         justify-content: space-between;

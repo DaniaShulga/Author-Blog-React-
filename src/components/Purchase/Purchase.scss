@@ -5,8 +5,8 @@ $font_Merriweather: 'Merriweather', serif;
 $font_Satisfy: 'Satisfy';
 
 .purchases {
-    width: 733px;
-    height: 375px;
+    width: 1100px;
+    height: 500px;
     .purchases_title {
         margin-bottom: 47px;
         color: #080808;
@@ -16,7 +16,7 @@ $font_Satisfy: 'Satisfy';
     .purchases_items {
         display: flex;
         width: 733px;
-        height: 375px;
+        height: 325px;
         li {
             width: 191px;
             height: 319px;

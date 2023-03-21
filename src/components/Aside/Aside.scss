@@ -8,61 +8,6 @@ $font_Merriweather: 'Merriweather', serif;
         .row {
             display: flex;
             justify-content: space-between;
-            .article_column_1 {
-                width: 733px;
-                height: 2310px;
-                .article_items {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    li {
-                        width: 359px;
-                        height: 550px;
-                        margin-bottom: 30px;
-                        .article_img {
-                            overflow: hidden;
-                            img {
-                                width: 359px;
-                                height: 269px;
-                                transition: transform 0.25s;
-                            }
-                        }
-                        .article_img:hover img {
-                            transform: scale(1.1);
-                        }
-
-                        .article_text_inner {
-                            width: 359px;
-                            height: 207px;
-                            margin-top: 20px;
-
-                            a {
-                                text-decoration: none;
-                                color: #080808;
-                                font-family: $font_Merriweather;
-                                font-size: 28px;
-                                line-height: 37px;
-                            }
-                            a:hover {
-                                color: #333;
-                                transition: color 0.1s linear;
-                            }
-                            .article_text_1 {
-                                margin-top: 10px;
-                                margin-bottom: 25px;
-                                color: #656565;
-                                line-height: 24px;
-                            }
-                            .article_text_2 {
-                                color: #656565;
-                                letter-spacing: 0.1em;
-                                text-transform: uppercase;
-                                font-size: 13px;
-                            }
-                        }
-                    }
-                }
-            }
             .article_column_2 {
                 width: 307px;
                 height: 1613px;

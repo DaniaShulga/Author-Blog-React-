@@ -7,13 +7,13 @@ import Purchase from 'components/Purchase/Purchase'
 type Props = {}
 const Home = (props: Props) => {
     return (
-        <div>
+        <>
             <Logo />
             <InterestingInformation />
             <Articles />
             <NewsLetter />
             <Purchase />
-        </div>
+        </>
     )
 }
 export default Home

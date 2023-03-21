@@ -1,5 +1,4 @@
 import './FooterItems.scss'
-import './FooterItems.scss'
 import './Reset.scss'
 
 type Props = {}

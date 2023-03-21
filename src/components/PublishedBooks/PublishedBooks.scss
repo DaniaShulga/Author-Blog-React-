@@ -1,0 +1,48 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main {
+    .purchases_wrapper {
+        width: 1100px;
+        height: 800px;
+        margin-top: 23px;
+        .purchases_par {
+            margin-bottom: 47px;
+            color: #080808;
+            font-family: 'Merriweather', serif;
+            font-size: 40px;
+        }
+        .purchases_block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 1100px;
+            height: 330px;
+            li {
+                height: 319px;
+                margin-right: 29px;
+                text-align: center;
+                img {
+                    width: 161px;
+                    height: 230px;
+                }
+                .book_title {
+                    margin-top: 29px;
+                    margin-bottom: 15px;
+                    a {
+                        text-decoration: none;
+                        color: #080808;
+                        font-family: 'Merriweather', serif;
+                        font-size: 17px;
+                    }
+                }
+                .book_price {
+                    color: #656565;
+                }
+            }
+        }
+    }
+}
