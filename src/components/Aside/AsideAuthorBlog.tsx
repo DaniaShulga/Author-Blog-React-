@@ -17,7 +17,7 @@ const AsideAuthorBlog = (props: Props) => {
                 </div>
                 <ul className="author_socials">
                     <li>
-                        <a href="./Header.tsx">
+                        <a href="https://twitter.com/QodeInteractive">
                             <img
                                 src="/images/twitter_icon_black.svg"
                                 alt="twitter icon"
@@ -25,7 +25,7 @@ const AsideAuthorBlog = (props: Props) => {
                         </a>
                     </li>
                     <li>
-                        <a href="./Header.tsx">
+                        <a href="https://www.facebook.com/QodeInteractive/">
                             <img
                                 src="/images/facebook_icon_black.svg"
                                 alt="facebook icon"
@@ -33,7 +33,7 @@ const AsideAuthorBlog = (props: Props) => {
                         </a>
                     </li>
                     <li>
-                        <a href="./Header.tsx">
+                        <a href="https://www.instagram.com/qodeinteractive/">
                             <img
                                 src="/images/instagram_icon_black.svg"
                                 alt="instagram icon"

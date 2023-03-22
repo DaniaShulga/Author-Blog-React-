@@ -34,7 +34,7 @@ const Menu = (props: Props) => {
                         </a>
                     </li>
                     <li>
-                        <a href="./Header.tsx">
+                        <a href="https://twitter.com/QodeInteractive">
                             <img
                                 src="./images/twitter_icon.svg"
                                 alt="twitter icon"
@@ -42,7 +42,7 @@ const Menu = (props: Props) => {
                         </a>
                     </li>
                     <li>
-                        <a href="./Header.tsx">
+                        <a href="https://www.facebook.com/QodeInteractive/">
                             <img
                                 src="./images/facebook_icon.svg"
                                 alt="facebook icon"
@@ -50,7 +50,7 @@ const Menu = (props: Props) => {
                         </a>
                     </li>
                     <li>
-                        <a href="./Header.tsx">
+                        <a href="https://www.instagram.com/qodeinteractive/">
                             <img
                                 src="./images/instagram_icon.svg"
                                 alt="instagram icon"
