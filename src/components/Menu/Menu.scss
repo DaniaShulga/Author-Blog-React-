@@ -36,14 +36,13 @@ $font_Merriweather: 'Merriweather', serif;
             &__list a {
                 text-decoration: none;
                 text-transform: uppercase;
-                color: white;
                 font-size: 13px;
                 letter-spacing: 2px;
                 font-family: 'Open Sans', sans-serif;
             }
             &__list a:hover {
                 color: #cecece;
-                transition: color 0.2s ease-in-out;
+                transition: color 0.3s;
             }
         }
         .header__widgets_and_search_button {

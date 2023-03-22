@@ -48,6 +48,7 @@ $font_Merriweather: 'Merriweather', serif;
                     }
                     .inf_btn:hover {
                         color: rgb(101, 101, 101);
+                        transition: color 0.3s;
                         cursor: pointer;
                     }
                     .inf_btn::after {
@@ -130,6 +131,7 @@ $font_Merriweather: 'Merriweather', serif;
                     }
                     .inf_btn:hover {
                         color: rgb(101, 101, 101);
+                        transition: color 0.3s;
                         cursor: pointer;
                     }
                     .inf_btn::after {
