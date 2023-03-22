@@ -1,3 +1,5 @@
+import AsideItem from './AsideItem'
+
 type Props = {}
 const AsideCategoriesBlock = (props: Props) => {
     return (
@@ -8,25 +10,13 @@ const AsideCategoriesBlock = (props: Props) => {
 
             <ul className="categories_list">
                 <li>
-                    <a href="./Header.tsx">art</a>
+                    <AsideItem to="/art">art</AsideItem>
                 </li>
                 <li>
-                    <a href="./Header.tsx">books</a>
+                    <AsideItem to="/books">books</AsideItem>
                 </li>
                 <li>
-                    <a href="./Header.tsx">creation</a>
-                </li>
-                <li>
-                    <a href="./Header.tsx">knowledge</a>
-                </li>
-                <li>
-                    <a href="./Header.tsx">recommendations</a>
-                </li>
-                <li>
-                    <a href="./Header.tsx">wisdom</a>
-                </li>
-                <li>
-                    <a href="./Header.tsx">writing</a>
+                    <AsideItem to="/writing">writing</AsideItem>
                 </li>
             </ul>
         </div>

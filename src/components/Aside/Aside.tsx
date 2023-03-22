@@ -3,7 +3,6 @@ import AsideAuthorBlog from './AsideAuthorBlog'
 import AsideCategoriesBlock from './AsideCategoriesBlock'
 import AsidePosts from './AsidePosts'
 import AsideSearchForm from './AsideSearchForm'
-import AsideTagsBlock from './AsideTagsBlock'
 
 type Props = {}
 const Aside = (props: Props) => {
@@ -13,7 +12,6 @@ const Aside = (props: Props) => {
             <AsideAuthorBlog />
             <AsidePosts />
             <AsideCategoriesBlock />
-            <AsideTagsBlock />
         </div>
     )
 }
