@@ -34,6 +34,9 @@ const Menu = (props: Props) => {
                             <li>
                                 <MenuItem to="/writing">writing</MenuItem>
                             </li>
+                            <li>
+                                <MenuItem to="/knowledge">knowledge</MenuItem>
+                            </li>
                         </ul>
                     </li>
                 </ul>

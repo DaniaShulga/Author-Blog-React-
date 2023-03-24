@@ -18,6 +18,7 @@ const Articles = (props: Props) => {
                                         title,
                                         description,
                                         date,
+                                        category,
                                     }) => (
                                         <ArticlesItem
                                             key={id}
@@ -25,6 +26,7 @@ const Articles = (props: Props) => {
                                             title={title}
                                             description={description}
                                             date={date}
+                                            category={category}
                                         />
                                     )
                                 )}

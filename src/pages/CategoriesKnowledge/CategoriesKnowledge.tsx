@@ -1,10 +1,10 @@
 import Aside from 'components/Aside/Aside'
 import Logo from 'components/Logo/Logo'
 import articlesArray from 'utils/articlesArray'
-import CategoriesBookItem from './CategoriesBookItem'
+import CategoriesKnowledgeItem from './CategoriesKnowledgeItem'
 
 type Props = {}
-const CategoriesBook = (props: Props) => {
+const CategoriesKnowledge = (props: Props) => {
     return (
         <>
             <Logo />
@@ -14,7 +14,9 @@ const CategoriesBook = (props: Props) => {
                         <div className="article_column_1">
                             <ul className="article_items">
                                 {articlesArray
-                                    .filter((item) => item.category === 'book')
+                                    .filter(
+                                        (item) => item.category === 'knowledge'
+                                    )
                                     .map(
                                         ({
                                             id,
@@ -23,7 +25,7 @@ const CategoriesBook = (props: Props) => {
                                             description,
                                             date,
                                         }) => (
-                                            <CategoriesBookItem
+                                            <CategoriesKnowledgeItem
                                                 key={id}
                                                 image={image}
                                                 title={title}
@@ -41,4 +43,4 @@ const CategoriesBook = (props: Props) => {
         </>
     )
 }
-export default CategoriesBook
+export default CategoriesKnowledge

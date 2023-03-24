@@ -4,6 +4,7 @@ import About from 'pages/About/About'
 import ArticlesMenu from 'pages/ArticlesMenu/ArticlesMenu'
 import CategoriesArt from 'pages/CategoriesArt/CategoriesArt'
 import CategoriesBook from 'pages/CategoriesBook/CategoriesBook'
+import CategoriesKnowledge from 'pages/CategoriesKnowledge/CategoriesKnowledge'
 import CategoriesWriting from 'pages/CategoriesWriting/CategoriesWriting'
 import Contact from 'pages/Contact/Contact'
 import Home from 'pages/Home/Home'
@@ -26,6 +27,10 @@ const App = (props: Props) => {
                         <Route
                             path="/writing"
                             element={<CategoriesWriting />}
+                        />
+                        <Route
+                            path="/knowledge"
+                            element={<CategoriesKnowledge />}
                         />
                     </Routes>
                 </div>

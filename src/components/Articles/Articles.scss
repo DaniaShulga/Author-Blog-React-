@@ -55,6 +55,21 @@ $font_Satisfy: 'Satisfy';
                                 line-height: 24px;
                                 font-family: 'Open Sans', sans-serif;
                             }
+                            .category_block {
+                                width: 133px;
+                                height: 36px;
+                                margin-bottom: 12px;
+                                text-align: center;
+                                color: #080808;
+                                background-color: white;
+                                border: 1px solid black;
+                                border-radius: 19px;
+                                .category_link {
+                                    display: block;
+                                    font-size: 18px;
+                                    width: 100%;
+                                }
+                            }
                             .article_text_2 {
                                 color: #656565;
                                 letter-spacing: 0.1em;
