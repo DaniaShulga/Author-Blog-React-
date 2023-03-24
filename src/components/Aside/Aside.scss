@@ -19,11 +19,10 @@ $font_Merriweather: 'Merriweather', serif;
                     margin-bottom: 52px;
                     .search_line {
                         border: none;
-                        width: 251px;
+                        width: 225px;
+                        padding: 15px;
                     }
-                    .search_line::placeholder {
-                        padding-left: 15px;
-                    }
+
                     .search_button {
                         width: 50px;
                         height: 50px;

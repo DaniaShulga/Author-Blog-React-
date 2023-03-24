@@ -34,13 +34,14 @@ $font_Satisfy: 'Satisfy';
                 border: 1px solid white;
                 input {
                     height: 48px;
-                    width: 253px;
+                    width: 236px;
                     background: none;
                     border: none;
+                    padding-left: 17px;
+                    color: #ffffff;
                 }
                 input::placeholder {
                     color: #ffffff;
-                    padding-left: 17px;
                 }
                 button {
                     width: 54px;

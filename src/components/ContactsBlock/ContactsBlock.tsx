@@ -8,7 +8,7 @@ const ContactsBlock = (props: Props) => {
                 <div className="contacts_image">
                     <img
                         src="/images/contact-img-1.jpg"
-                        alt=""
+                        alt="contact img"
                         className="image_1"
                     />
                 </div>

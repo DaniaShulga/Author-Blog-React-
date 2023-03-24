@@ -21,7 +21,7 @@ const NewsLetter = (props: Props) => {
                         </div>
 
                         <div className="newsletter_search">
-                            <input type="text" placeholder="Enter E-Mail" />
+                            <input type="email" placeholder="Enter E-Mail" />
                             <button>
                                 <img src={arrowRight} alt="" />
                             </button>

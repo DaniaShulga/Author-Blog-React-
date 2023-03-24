@@ -6,7 +6,7 @@ const AboutTheAuthor = (props: Props) => {
         <>
             <img
                 src="/images/about-img-1.jpg"
-                alt="about image"
+                alt="about img"
                 className="about_img"
             />
 

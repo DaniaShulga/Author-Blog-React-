@@ -20,6 +20,22 @@ const Menu = (props: Props) => {
                     <li>
                         <MenuItem to="/contact">contact</MenuItem>
                     </li>
+                    <li>
+                        <a href="/" className="menu__link">
+                            Categories
+                        </a>
+                        <ul className="sub-menu__list">
+                            <li>
+                                <MenuItem to="/art">art</MenuItem>
+                            </li>
+                            <li>
+                                <MenuItem to="/books">books</MenuItem>
+                            </li>
+                            <li>
+                                <MenuItem to="/writing">writing</MenuItem>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
 

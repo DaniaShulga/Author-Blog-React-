@@ -1,6 +1,5 @@
 import './Aside.scss'
 import AsideAuthorBlog from './AsideAuthorBlog'
-import AsideCategoriesBlock from './AsideCategoriesBlock'
 import AsidePosts from './AsidePosts'
 import AsideSearchForm from './AsideSearchForm'
 
@@ -11,7 +10,6 @@ const Aside = (props: Props) => {
             <AsideSearchForm />
             <AsideAuthorBlog />
             <AsidePosts />
-            <AsideCategoriesBlock />
         </div>
     )
 }
