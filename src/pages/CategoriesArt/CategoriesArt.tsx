@@ -1,5 +1,4 @@
 import Articles from 'components/Articles/Articles'
-import Aside from 'components/Aside/Aside'
 import Logo from 'components/Logo/Logo'
 
 type Props = {}
