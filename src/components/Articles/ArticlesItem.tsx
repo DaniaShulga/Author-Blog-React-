@@ -6,7 +6,7 @@ type Props = {
     description: string
     date: string
     image: string
-    category?: string
+    category: string
 }
 
 const ArticlesItem = ({ title, description, date, image, category }: Props) => {

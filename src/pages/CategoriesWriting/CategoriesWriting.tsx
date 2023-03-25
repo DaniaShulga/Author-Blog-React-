@@ -24,6 +24,7 @@ const CategoriesWriting = (props: Props) => {
                                             title,
                                             description,
                                             date,
+                                            category,
                                         }) => (
                                             <CategoriesWritingItem
                                                 key={id}
@@ -31,6 +32,7 @@ const CategoriesWriting = (props: Props) => {
                                                 title={title}
                                                 description={description}
                                                 date={date}
+                                                category={category}
                                             />
                                         )
                                     )}

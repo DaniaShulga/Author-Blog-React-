@@ -3,12 +3,14 @@ import InterestingInformation from 'components/InterestingInformation/Interestin
 import Logo from 'components/Logo/Logo'
 import NewsLetter from 'components/NewsLetter/NewsLetter'
 import Purchase from 'components/Purchase/Purchase'
+import SimpleSlider from 'components/SimpleSlider/SimpleSlider'
 
 type Props = {}
 const Home = (props: Props) => {
     return (
         <>
             <Logo />
+            <SimpleSlider />
             <InterestingInformation />
             <Articles />
             <NewsLetter />

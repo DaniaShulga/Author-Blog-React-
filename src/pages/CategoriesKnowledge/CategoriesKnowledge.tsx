@@ -24,6 +24,7 @@ const CategoriesKnowledge = (props: Props) => {
                                             title,
                                             description,
                                             date,
+                                            category,
                                         }) => (
                                             <CategoriesKnowledgeItem
                                                 key={id}
@@ -31,6 +32,7 @@ const CategoriesKnowledge = (props: Props) => {
                                                 title={title}
                                                 description={description}
                                                 date={date}
+                                                category={category}
                                             />
                                         )
                                     )}

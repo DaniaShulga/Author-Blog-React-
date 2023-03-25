@@ -22,6 +22,7 @@ const CategoriesArt = (props: Props) => {
                                             title,
                                             description,
                                             date,
+                                            category,
                                         }) => (
                                             <CategoriesArtItem
                                                 key={id}
@@ -29,6 +30,7 @@ const CategoriesArt = (props: Props) => {
                                                 title={title}
                                                 description={description}
                                                 date={date}
+                                                category={category}
                                             />
                                         )
                                     )}

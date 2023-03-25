@@ -88,12 +88,19 @@ $font_Merriweather: 'Merriweather', serif;
                 & li {
                     display: flex;
                     align-items: center;
-                    width: 24px;
-                    height: 26px;
-                    margin: 0 6px;
-                    img {
-                        width: 14px;
-                        height: 14px;
+                    margin: 0 10px;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        svg {
+                            width: 14px;
+                            height: 14px;
+                        }
+                        svg:hover {
+                            fill: #cecece;
+                            transition: fill 0.3s;
+                        }
                     }
                 }
             }

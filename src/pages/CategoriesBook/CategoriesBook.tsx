@@ -22,6 +22,7 @@ const CategoriesBook = (props: Props) => {
                                             title,
                                             description,
                                             date,
+                                            category,
                                         }) => (
                                             <CategoriesBookItem
                                                 key={id}
@@ -29,6 +30,7 @@ const CategoriesBook = (props: Props) => {
                                                 title={title}
                                                 description={description}
                                                 date={date}
+                                                category={category}
                                             />
                                         )
                                     )}
