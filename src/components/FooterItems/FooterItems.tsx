@@ -1,4 +1,5 @@
 import './FooterItems.scss'
+import FooterNav from './FooterNav'
 import './Reset.scss'
 
 type Props = {}
@@ -13,19 +14,19 @@ const FooterItems = (props: Props) => {
 
             <ul className="footer_nav">
                 <li>
-                    <a href="./FooterItems.tsx">home</a>
+                    <FooterNav to="/">home</FooterNav>
                 </li>
                 <li>
-                    <a href="./FooterItems.tsx">about</a>
+                    <FooterNav to="/about">about</FooterNav>
                 </li>
                 <li>
-                    <a href="./FooterItems.tsx">articles</a>
+                    <FooterNav to="/articles">articles</FooterNav>
                 </li>
                 <li>
-                    <a href="./FooterItems.tsx">books</a>
+                    <FooterNav to="/books">books</FooterNav>
                 </li>
                 <li>
-                    <a href="./FooterItems.tsx">contact</a>
+                    <FooterNav to="/contact">contact</FooterNav>
                 </li>
             </ul>
 
