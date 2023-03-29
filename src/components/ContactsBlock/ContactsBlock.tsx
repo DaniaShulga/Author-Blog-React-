@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import './ContactsBlock.scss'
 
 type Props = {}
 const ContactsBlock = (props: Props) => {
+    const [text, setText] = useState('Leave A Message...')
+
     return (
         <>
             <div className="contacts_block">
@@ -32,9 +35,11 @@ const ContactsBlock = (props: Props) => {
                             placeholder="E-Mail Adress"
                         />
                         <div className="text_area">
-                            <textarea className="text_area_block">
-                                Leave A Message...
-                            </textarea>
+                            <textarea
+                                className="text_area_block"
+                                value={text}
+                                onChange={(e) => setText(e.target.value)}
+                            ></textarea>
                         </div>
                         <button className="contacts_button">
                             send message

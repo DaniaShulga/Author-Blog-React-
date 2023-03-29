@@ -31,6 +31,7 @@ const CategoriesArt = (props: Props) => {
                                                 description={description}
                                                 date={date}
                                                 category={category}
+                                                id={id}
                                             />
                                         )
                                     )}

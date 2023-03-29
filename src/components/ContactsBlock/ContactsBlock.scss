@@ -34,23 +34,21 @@ $font_Merriweather: 'Merriweather', serif;
                 margin-bottom: 28px;
             }
             .input_1 {
-                width: 250px;
+                width: 230px;
                 height: 40px;
                 margin-right: 10px;
                 margin-bottom: 25px;
                 border: 1px solid #080808;
+                padding-left: 20px;
             }
-            .input_1::placeholder {
-                padding-left: 15px;
-            }
+
             .input_2 {
-                width: 250px;
+                width: 230px;
                 height: 40px;
                 border: 1px solid #080808;
+                padding-left: 20px;
             }
-            .input_2::placeholder {
-                padding-left: 15px;
-            }
+
             .text_area {
                 .text_area_block {
                     width: 494px;

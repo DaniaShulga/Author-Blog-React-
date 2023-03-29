@@ -56,20 +56,38 @@ $font_Satisfy: 'Satisfy';
                                 font-family: 'Open Sans', sans-serif;
                             }
                             .category_block {
-                                width: 133px;
+                                display: flex;
+                                justify-content: space-between;
+                                width: 350px;
                                 height: 36px;
                                 margin-bottom: 12px;
-                                text-align: center;
-                                color: #080808;
-                                background-color: white;
-                                border: 1px solid black;
-                                border-radius: 19px;
-                                .category_link {
-                                    display: block;
-                                    font-size: 18px;
-                                    width: 100%;
+                                .category_block_link {
+                                    width: 133px;
+                                    height: 36px;
+                                    text-align: center;
+                                    color: #080808;
+                                    background-color: white;
+                                    border: 1px solid black;
+                                    border-radius: 19px;
+                                    .category_link {
+                                        display: block;
+                                        font-size: 18px;
+                                        width: 100%;
+                                    }
+                                }
+
+                                .like_block {
+                                    .like_1 {
+                                        width: 33px;
+                                        cursor: pointer;
+                                    }
+                                    .like_2 {
+                                        width: 33px;
+                                        cursor: pointer;
+                                    }
                                 }
                             }
+
                             .article_text_2 {
                                 color: #656565;
                                 letter-spacing: 0.1em;
