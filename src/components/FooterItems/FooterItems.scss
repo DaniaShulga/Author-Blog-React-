@@ -46,9 +46,13 @@ $font_Satisfy: 'Satisfy';
             margin: 35px auto;
             li {
                 a {
-                    img {
+                    svg {
                         width: 14px;
                         height: 14px;
+                    }
+                    svg:hover {
+                        fill: #cecece;
+                        transition: fill 0.3s;
                     }
                 }
             }
