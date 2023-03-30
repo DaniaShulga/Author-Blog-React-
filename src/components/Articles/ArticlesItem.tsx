@@ -4,6 +4,8 @@ import LikeIconEmpty from 'assets/like_icon.svg'
 import LikeIconFull from 'assets/like_icon_black.svg'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { toggleLike } from 'redux/likeReducer'
+import ArticlesNav from './ArticlesNav'
+import { Link } from 'react-router-dom'
 
 type Props = {
     title: string
@@ -31,7 +33,7 @@ const ArticlesItem = ({
                 <img src={image} alt="images" />
             </div>
             <div className="article_text_inner">
-                <a href="component/Main/Main.tsx">{title}</a>
+                <ArticlesNav to={`/blog/${id}`}>{title}</ArticlesNav>
                 <p className="article_text_1">{description}</p>
                 <div className="category_block">
                     <div className="category_block_link">

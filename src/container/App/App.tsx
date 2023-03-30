@@ -1,3 +1,11 @@
+import Blog from 'components/Blog/Blog'
+import Blog2 from 'components/Blog2/Blog2'
+import Blog3 from 'components/Blog3/Blog3'
+import Blog4 from 'components/Blog4/Blog4'
+import Blog5 from 'components/Blog5/Blog5'
+import Blog6 from 'components/Blog6/Blog6'
+import Blog7 from 'components/Blog7/Blog7'
+import Blog8 from 'components/Blog8/Blog8'
 import Footer from 'container/Footer/Footer'
 import Header from 'container/Header/Header'
 import About from 'pages/About/About'
@@ -32,6 +40,14 @@ const App = (props: Props) => {
                             path="/knowledge"
                             element={<CategoriesKnowledge />}
                         />
+                        <Route path="/blog/1" element={<Blog />} />
+                        <Route path="/blog/2" element={<Blog2 />} />
+                        <Route path="/blog/3" element={<Blog3 />} />
+                        <Route path="/blog/4" element={<Blog4 />} />
+                        <Route path="/blog/5" element={<Blog5 />} />
+                        <Route path="/blog/6" element={<Blog6 />} />
+                        <Route path="/blog/7" element={<Blog7 />} />
+                        <Route path="/blog/8" element={<Blog8 />} />
                     </Routes>
                 </div>
             </main>
