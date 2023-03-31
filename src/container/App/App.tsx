@@ -15,6 +15,7 @@ import CategoriesBook from 'pages/CategoriesBook/CategoriesBook'
 import CategoriesKnowledge from 'pages/CategoriesKnowledge/CategoriesKnowledge'
 import CategoriesWriting from 'pages/CategoriesWriting/CategoriesWriting'
 import Contact from 'pages/Contact/Contact'
+import Favourites from 'pages/Favourites/Favourites'
 import Home from 'pages/Home/Home'
 import { Route, Routes } from 'react-router-dom'
 
@@ -40,6 +41,7 @@ const App = (props: Props) => {
                             path="/knowledge"
                             element={<CategoriesKnowledge />}
                         />
+                        <Route path="/favourites" element={<Favourites />} />
                         <Route path="/blog/1" element={<Blog />} />
                         <Route path="/blog/2" element={<Blog2 />} />
                         <Route path="/blog/3" element={<Blog3 />} />

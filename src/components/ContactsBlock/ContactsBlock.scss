@@ -73,12 +73,12 @@ $font_Merriweather: 'Merriweather', serif;
                 font-weight: 400;
                 letter-spacing: 2px;
                 font-family: 'Open Sans', sans-serif;
+                transition: 0.1s linear;
             }
             .contacts_button:hover {
                 background-color: #ffffff;
                 color: #080808;
                 border: 1px solid #080808;
-                transition: all 0.1s linear;
             }
         }
     }

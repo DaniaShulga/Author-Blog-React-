@@ -12,6 +12,24 @@ const CategoriesBook = (props: Props) => {
                 <div className="container">
                     <div className="row">
                         <div className="article_column_1">
+                            <h2
+                                style={{
+                                    fontFamily: 'Open Sans',
+                                    marginBottom: '27px',
+                                    fontSize: '26px',
+                                    fontWeight: '700',
+                                }}
+                            >
+                                <span
+                                    style={{
+                                        fontWeight: '100',
+                                        marginRight: '5px',
+                                    }}
+                                >
+                                    Category:
+                                </span>
+                                Book
+                            </h2>
                             <ul className="article_items">
                                 {articlesArray
                                     .filter((item) => item.category === 'book')

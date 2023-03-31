@@ -43,10 +43,10 @@ $font_Satisfy: 'Satisfy';
                                 font-family: $font_Merriweather;
                                 font-size: 28px;
                                 line-height: 37px;
+                                transition: 0.1s linear;
                             }
                             a:hover {
                                 color: #333;
-                                transition: color 0.1s linear;
                             }
                             .article_text_1 {
                                 margin-top: 10px;
@@ -118,6 +118,7 @@ $font_Satisfy: 'Satisfy';
                         background-color: #080808;
                         cursor: pointer;
                         border: none;
+                        transition: 0.2s linear;
                         img {
                             width: 17px;
                             height: 17px;
@@ -208,60 +209,6 @@ $font_Satisfy: 'Satisfy';
                                     color: #656565;
                                 }
                             }
-                        }
-                    }
-                }
-                .categories_block {
-                    width: 306px;
-                    height: 239px;
-                    margin-top: 30px;
-                    .categories_title {
-                        margin-bottom: 20px;
-                        font-family: $font_Merriweather;
-                        font-size: 20px;
-                        color: #080808;
-                    }
-                    .categories_list {
-                        width: 306px;
-                        height: 196px;
-                        li {
-                            margin-top: 10px;
-                            a {
-                                text-decoration: none;
-                                color: #656565;
-                                font-size: 13px;
-                                letter-spacing: 2px;
-                                text-transform: uppercase;
-                            }
-                            a:hover {
-                                color: #080808;
-                                transition: color 0.3s ease-in-out;
-                            }
-                        }
-                    }
-                }
-
-                .tags_block {
-                    width: 306px;
-                    height: 105px;
-                    .tags_title {
-                        margin-bottom: 15px;
-                        color: #080808;
-                        font-size: 20px;
-                        font-family: $font_Merriweather;
-                    }
-                    .tags_items {
-                        a {
-                            text-decoration: none;
-                            color: #656565;
-                            text-transform: uppercase;
-                            letter-spacing: 2px;
-                            line-height: 28px;
-                            font-size: 13px;
-                        }
-                        a:hover {
-                            color: #080808;
-                            transition: color 0.3s ease-in-out;
                         }
                     }
                 }

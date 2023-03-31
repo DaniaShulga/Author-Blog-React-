@@ -1,6 +1,7 @@
 import './Menu.scss'
 import MenuItem from './MenuItem'
 import './Reset.scss'
+import ArrowDown from 'assets/arrow_down_icon.svg'
 
 type Props = {}
 const Menu = (props: Props) => {
@@ -20,8 +21,14 @@ const Menu = (props: Props) => {
                     <li>
                         <MenuItem to="/contact">contact</MenuItem>
                     </li>
+
                     <li>
                         <a href="/" className="menu__link">
+                            <img
+                                src={ArrowDown}
+                                alt=""
+                                className="arrow_down_categories"
+                            />
                             Categories
                         </a>
                         <ul className="sub-menu__list">
@@ -38,6 +45,9 @@ const Menu = (props: Props) => {
                                 <MenuItem to="/knowledge">knowledge</MenuItem>
                             </li>
                         </ul>
+                    </li>
+                    <li>
+                        <MenuItem to="/favourites">favourites</MenuItem>
                     </li>
                 </ul>
             </div>

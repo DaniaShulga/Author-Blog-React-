@@ -77,10 +77,10 @@ $font_Merriweather: 'Merriweather', serif;
                                 svg {
                                     width: 14px;
                                     height: 14px;
+                                    transition: 0.3s linear;
                                 }
                                 svg:hover {
                                     fill: #656565;
-                                    transition: fill 0.3s;
                                 }
                             }
                         }

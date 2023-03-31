@@ -30,10 +30,10 @@ $font_Satisfy: 'Satisfy';
                     text-transform: uppercase;
                     color: #ffffff;
                     font-family: 'Open Sans', sans-serif;
+                    transition: 0.3s linear;
                 }
                 a:hover {
                     color: #cecece;
-                    transition: color 0.2s ease-in-out;
                 }
             }
         }
@@ -49,10 +49,10 @@ $font_Satisfy: 'Satisfy';
                     svg {
                         width: 14px;
                         height: 14px;
+                        transition: 0.3s linear;
                     }
                     svg:hover {
                         fill: #cecece;
-                        transition: fill 0.3s;
                     }
                 }
             }
