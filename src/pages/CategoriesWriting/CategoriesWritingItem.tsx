@@ -25,7 +25,9 @@ const CategoriesWritingItem = ({
     return (
         <li>
             <div className="article_img">
-                <img src={image} alt="images" />
+                <Link to={`/blog/${id}`}>
+                    <img src={image} alt="images" />
+                </Link>
             </div>
             <div className="article_text_inner">
                 <Link to={`/blog/${id}`}>{title}</Link>
