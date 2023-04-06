@@ -36,7 +36,7 @@ const Menu = (props: Props) => {
                                 <MenuItem to="/art">art</MenuItem>
                             </li>
                             <li>
-                                <MenuItem to="/books">book</MenuItem>
+                                <MenuItem to="/books">books</MenuItem>
                             </li>
                             <li>
                                 <MenuItem to="/writing">writing</MenuItem>

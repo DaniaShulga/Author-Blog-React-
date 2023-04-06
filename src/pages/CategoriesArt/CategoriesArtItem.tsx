@@ -1,5 +1,6 @@
 import LikeIconEmpty from 'assets/like_icon.svg'
 import LikeIconFull from 'assets/like_icon_black.svg'
+import { Link } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { toggleLike } from 'redux/likeReducer'
 
@@ -27,13 +28,23 @@ const CategoriesArtItem = ({
                 <img src={image} alt="images" />
             </div>
             <div className="article_text_inner">
-                <a href="component/Main/Main.tsx">{title}</a>
+                <Link to={`/blog/${id}`}>{title}</Link>
+
                 <p className="article_text_1">{description}</p>
                 <div className="category_block">
-                    <div className="category_block_link">
-                        <a href="/" className="category_link">
-                            {category}
-                        </a>
+                    <div
+                        className="category_block_link"
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            color: '#656565',
+                            fontFamily: 'Merriweather',
+                            fontSize: '18px',
+                            cursor: 'pointer',
+                        }}
+                    >
+                        {category}
                     </div>
 
                     <div

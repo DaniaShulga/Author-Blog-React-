@@ -5,8 +5,8 @@ type Like = {
 }
 
 const initialState: Like = {
-    1: true,
-    2: true,
+    1: false,
+    2: false,
 }
 
 
@@ -18,6 +18,10 @@ export const likeSlice = createSlice({
             ...state,
             [action.payload]: !state[action.payload],
         }),
+        addArticletoFav: (state,action) => ({
+            ...state,
+            [action.payload.id]: state[action.payload.id]
+        })
     },
 })
 

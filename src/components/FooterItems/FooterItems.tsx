@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './FooterItems.scss'
 import FooterNav from './FooterNav'
 import './Reset.scss'
@@ -7,9 +8,9 @@ const FooterItems = (props: Props) => {
     return (
         <div className="footer_items">
             <div className="footer_logo">
-                <a href="./FooterItems.tsx">
+                <Link to={'/'}>
                     <img src="./images/footer-logo.png" alt="" />
-                </a>
+                </Link>
             </div>
 
             <ul className="footer_nav">

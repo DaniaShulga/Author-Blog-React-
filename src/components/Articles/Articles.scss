@@ -69,10 +69,14 @@ $font_Satisfy: 'Satisfy';
                                     background-color: white;
                                     border: 1px solid black;
                                     border-radius: 19px;
-                                    .category_link {
+                                    a {
                                         display: block;
                                         font-size: 18px;
+                                        color: #656565;
                                         width: 100%;
+                                    }
+                                    a:hover {
+                                        color: #080808;
                                     }
                                 }
 

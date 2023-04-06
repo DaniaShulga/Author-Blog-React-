@@ -28,11 +28,11 @@ const CategoriesBook = (props: Props) => {
                                 >
                                     Category:
                                 </span>
-                                Book
+                                Books
                             </h2>
                             <ul className="article_items">
                                 {articlesArray
-                                    .filter((item) => item.category === 'book')
+                                    .filter((item) => item.category === 'books')
                                     .map(
                                         ({
                                             id,

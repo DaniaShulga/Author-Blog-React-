@@ -1,11 +1,23 @@
 import Aside from 'components/Aside/Aside'
 import Logo from 'components/Logo/Logo'
-
-import ArticleImg from 'assets/blog-img-3.jpg'
+import { useParams } from 'react-router-dom'
+import articlesArray, { Props, getArticlesObject } from 'utils/articlesArray'
 import CommentsImg from 'assets/comment_img.png'
+import './BlogPage.scss'
 
-type Props = {}
-const Blog3 = (props: Props) => {
+type Prop = {
+    articlesObject?: {
+        [id: number]: Props
+    }
+}
+const BlogPage = ({
+    articlesObject = getArticlesObject(articlesArray),
+}: Prop) => {
+    const { id } = useParams()
+
+    const article = articlesObject[parseInt(id!)]
+    console.log(article)
+
     return (
         <>
             <Logo />
@@ -14,54 +26,25 @@ const Blog3 = (props: Props) => {
                     <div className="row">
                         <div className="article_column_1">
                             <div className="article_image">
-                                <img src={ArticleImg} alt="" />
+                                <img src={article.image} alt="" />
                             </div>
                             <div className="article_title">
-                                <p>
-                                    A Guide to Annotated <br /> Bibliographies
-                                </p>
+                                <p>{article.title}</p>
                             </div>
                             <div className="article_date">
-                                <p>POSTED AT 11:30H</p>
+                                <p>{article.date}</p>
                             </div>
 
                             <p className="article_text_1">
-                                Proin gravida nibh vel velit auctor aliquet.
-                                Aenean sollicitudin, lorem quis bibendum auctor,
-                                nisi elit consequat ipsum, nec sagittis sem nibh
-                                id elit. Duis sed odio sit amet nibh vulputate
-                                cursus a sit amet mauris. Morbi accumsan ipsum
-                                velit. Nam nec tellus a odio tincidunt auctor a
-                                ornare odio. Sed non mauris vitae erat consequat
-                                auctor eu in elit. Class aptent taciti sociosqu
-                                ad litora torquent per conubia nostra, per
-                                inceptos himenaeos. Mauris in erat justo. Nullam
-                                ac urna eu felis dapibus condimentum sit amet a
-                                augue.
+                                {article.articleText1}
                             </p>
 
                             <p className="article_text_2">
-                                Proin gravida nibh vel velit auctor aliquet.
-                                Aenean sollicitudin, lorem quis bibendum auctor,
-                                nisi elit consequat ipsum, nec sagittis sem nibh
-                                id elit. Duis sed odio sit amet nibh vulputate
-                                cursus a sit amet mauris. Morbi accumsan ipsum
-                                velit.
+                                {article.articleText2}
                             </p>
 
                             <p className="article_text_3">
-                                Proin gravida nibh vel velit auctor aliquet.
-                                Aenean sollicitudin, lorem quis bibendum auctor,
-                                nisi elit consequat ipsum, nec sagittis sem nibh
-                                id elit. Duis sed odio sit amet nibh vulputate
-                                cursus a sit amet mauris. Morbi accumsan ipsum
-                                velit. Nam nec tellus a odio tincidunt auctor a
-                                ornare odio. Sed non mauris vitae erat consequat
-                                auctor eu in elit. Class aptent taciti sociosqu
-                                ad litora torquent per conubia nostra, per
-                                inceptos himenaeos. Mauris in erat justo. Nullam
-                                ac urna eu felis dapibus condimentum sit amet a
-                                augue.
+                                {article.articleText1}
                             </p>
 
                             <div className="comments_block">
@@ -101,11 +84,11 @@ const Blog3 = (props: Props) => {
                                     placeholder="Website"
                                     className="user_website"
                                 />
-                                <input type="checkbox" />
-                                <span>
+                                <label>
+                                    <input type="checkbox" />
                                     Save my name, email, and website in this
                                     browser for the next time I comment.
-                                </span>
+                                </label>
                                 <button>submit</button>
                             </div>
                         </div>
@@ -116,4 +99,4 @@ const Blog3 = (props: Props) => {
         </>
     )
 }
-export default Blog3
+export default BlogPage

@@ -5,6 +5,7 @@ import LikeIconFull from 'assets/like_icon_black.svg'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { toggleLike } from 'redux/likeReducer'
 import ArticlesNav from './ArticlesNav'
+import { Link } from 'react-router-dom'
 
 type Props = {
     title: string
@@ -25,22 +26,20 @@ const ArticlesItem = ({
 }: Props) => {
     const isLiked = useAppSelector((state) => state.productsLike[id])
     const dispatch = useAppDispatch()
-    const test = useAppSelector((state) => state.productsLike)
-    console.log(test)
 
     return (
         <li>
             <div className="article_img">
-                <img src={image} alt="images" />
+                <Link to={`/blog/${id}`}>
+                    <img src={image} alt="images" />
+                </Link>
             </div>
             <div className="article_text_inner">
                 <ArticlesNav to={`/blog/${id}`}>{title}</ArticlesNav>
                 <p className="article_text_1">{description}</p>
                 <div className="category_block">
                     <div className="category_block_link">
-                        <a href="/" className="category_link">
-                            {category}
-                        </a>
+                        <Link to={`/${category}`}>{category}</Link>
                     </div>
 
                     <div

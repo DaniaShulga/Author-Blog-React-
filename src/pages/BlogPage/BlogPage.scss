@@ -134,6 +134,7 @@ body {
                     padding-top: 16px;
                     padding-left: 26px;
                     border: 1px solid rgba(8, 8, 8, 1);
+                    outline: none;
                     font-family: 'Open Sans', sans-serif;
                     margin-bottom: 19px;
                 }
@@ -141,6 +142,7 @@ body {
                     width: 201px;
                     height: 51px;
                     border: 1px solid rgba(8, 8, 8, 1);
+                    outline: none;
                     font-size: 16px;
                     padding-left: 26px;
                     margin-right: 25px;
@@ -150,6 +152,7 @@ body {
                     width: 200px;
                     height: 51px;
                     border: 1px solid rgba(8, 8, 8, 1);
+                    outline: none;
                     font-size: 16px;
                     padding-left: 26px;
                     margin-right: 25px;
@@ -158,10 +161,11 @@ body {
                     width: 200px;
                     height: 51px;
                     border: 1px solid rgba(8, 8, 8, 1);
+                    outline: none;
                     font-size: 16px;
                     padding-left: 26px;
                 }
-                span {
+                label {
                     font-family: 'Open Sans', sans-serif;
                     color: #656565;
                     font-size: 16px;
@@ -183,10 +187,10 @@ body {
                     text-transform: uppercase;
                     border: none;
                     cursor: pointer;
+                    transition: 0.3s linear;
                 }
                 button:hover {
                     background-color: #333;
-                    transition: background-color 0.3s;
                 }
             }
         }
