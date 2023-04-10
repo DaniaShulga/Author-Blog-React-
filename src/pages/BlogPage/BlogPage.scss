@@ -71,7 +71,6 @@ body {
             }
             .comments_block {
                 width: 750px;
-                height: 229px;
                 .comments_count {
                     font-family: $font_Merriweather;
                     font-size: 28px;
@@ -81,8 +80,10 @@ body {
                     display: flex;
                     width: 750px;
                     height: 128px;
-                    margin-top: 45px;
-                    margin-left: 25px;
+                    margin-top: 18px;
+                    margin-bottom: 20px;
+                    border: 1px solid black;
+                    padding: 15px;
                     .comments_img {
                         width: 75px;
                         height: 75px;
@@ -165,7 +166,7 @@ body {
                     font-size: 16px;
                     padding-left: 26px;
                 }
-                label {
+                .comment_checkbox {
                     font-family: 'Open Sans', sans-serif;
                     color: #656565;
                     font-size: 16px;
