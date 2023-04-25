@@ -9,7 +9,7 @@ const MenuItem = ({ to, children }: Props) => {
     return (
         <NavLink
             className={({ isActive }) =>
-                isActive ? 'menu-item-active' : 'menu-item'
+                isActive ? 'menu-item-active' : 'menu__link'
             }
             to={to}
         >

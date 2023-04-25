@@ -1,0 +1,214 @@
+.title {
+    font-family: 'Merriweather';
+    font-size: 40px;
+    color: #080808;
+}
+
+.about-img {
+    &__container {
+    }
+
+    &__body {
+        img {
+            width: 100%;
+        }
+        margin: 0 0 80px 0;
+    }
+}
+
+.about-author {
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        margin: 0 0 90px 0;
+    }
+    @media (max-width: 1000px) {
+        &__body {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__block1 {
+        width: 50%;
+    }
+    @media (max-width: 1000px) {
+        &__block1 {
+            width: 100%;
+            margin: 0 0 40px 0;
+        }
+    }
+
+    &__block2 {
+        width: 50%;
+    }
+    @media (max-width: 1000px) {
+        &__block2 {
+            margin: 0 !important;
+            width: 100%;
+        }
+    }
+}
+
+.block1 {
+    &__title {
+        margin: 0 0 20px 0;
+    }
+
+    &__description {
+        color: #656565;
+        font-size: 20px;
+        line-height: 29px;
+        margin: 0 0 10px 0;
+    }
+
+    &__text {
+        color: #656565;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__text p:first-child {
+        margin: 0 0 10px 0;
+    }
+}
+
+.block2 {
+    margin: 0 0 0 20px;
+    &__formalEducation {
+        margin: 0 0 40px 0;
+    }
+
+    &__title {
+        color: #080808;
+        font-family: 'Merriweather';
+        font-size: 28px;
+        margin: 0 0 20px 0;
+    }
+
+    &__columns {
+        display: flex;
+    }
+
+    @media (max-width: 767px) {
+        &__columns {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__column {
+    }
+
+    @media (max-width: 767px) {
+        &__column {
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__name {
+        color: #080808;
+        font-family: 'Merriweather';
+        font-size: 17px;
+        margin: 0 0 20px 0;
+    }
+
+    &__text {
+        color: #656565;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__awardsAndRecognitions {
+    }
+
+    &__lists {
+        display: flex;
+    }
+
+    @media (max-width: 767px) {
+        &__lists {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__list {
+        p {
+            color: #656565;
+            font-size: 16px;
+            margin: 0 0 15px 0;
+        }
+    }
+    @media (max-width: 767px) {
+        &__list {
+            width: 100%;
+        }
+    }
+    &__list:first-child {
+        margin: 0 40px 0 0;
+    }
+    @media (max-width: 1000px) {
+        &__list:first-child {
+            margin: 0 150px 0 0;
+        }
+    }
+    @media (max-width: 767px) {
+        &__list:first-child {
+            margin: 0;
+        }
+    }
+}
+
+// .books {
+//     &__title {
+//         margin: 0 0 50px 0;
+//     }
+
+//     &__body {
+//         display: flex;
+//         flex-wrap: wrap;
+//         margin: 0 -12px;
+//     }
+
+//     &__column {
+//         width: 20%;
+//         padding: 0 12px;
+//         text-align: center;
+//         margin: 0 0 60px 0;
+//     }
+
+//     @media (max-width: 1000px) {
+//         &__column {
+//             width: 33.333%;
+//         }
+//     }
+//     @media (max-width: 767px) {
+//         &__column {
+//             width: 50%;
+//         }
+//     }
+//     @media (max-width: 600px) {
+//         &__column {
+//             width: 100%;
+//         }
+//     }
+
+//     &__img {
+//         img {
+//             width: 100%;
+//         }
+//     }
+
+//     &__name {
+//         margin: 15px 0;
+//         font-family: 'Merriweather';
+//         font-size: 17px;
+//         a {
+//             color: #080808;
+//         }
+//     }
+
+//     &__price {
+//         color: #656565;
+//         font-size: 16px;
+//     }
+// }

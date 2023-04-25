@@ -1,12 +1,12 @@
-import Articles from 'components/Articles/Articles'
 import Logo from 'components/Logo/Logo'
+import PostsArticles from 'components/PostsArticles/PostsArticles'
 
 type Props = {}
 const ArticlesMenu = (props: Props) => {
     return (
         <>
             <Logo />
-            <Articles />
+            <PostsArticles />
         </>
     )
 }

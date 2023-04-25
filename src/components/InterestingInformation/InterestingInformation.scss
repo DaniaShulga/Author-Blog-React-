@@ -1,152 +1,140 @@
-$font_Satisfy: 'Satisfy';
-$font_Merriweather: 'Merriweather', serif;
+.info {
+    &__container {
+    }
 
-.main {
-    .interesting_information {
+    &__body {
+    }
+    @media (min-width: 670px) {
+        &__body {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -7px -12px;
+        }
+    }
+
+    &__body > div:nth-child(2) {
+        .info__item {
+            background: url('/assets/info-2.jpg') no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+        .item-info__body {
+            border: 1px solid #656565;
+            margin: 8px auto;
+            width: 96%;
+        }
+        .item-info__title {
+            font-family: 'Merriweather';
+            font-size: 24px;
+            color: #fff;
+            padding: 25px 0;
+        }
+    }
+
+    &__column {
+        padding: 0 7px;
+        flex: 0 1 33.333%;
+        margin: 0 0 12px 0;
+    }
+
+    @media (max-width: 992px) {
+        &__column {
+            flex: 0 1 50%;
+        }
+        &__column:last-child {
+            flex: 1 1 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        &__column {
+            padding: 0;
+        }
+    }
+
+    &__item {
+        height: 100%;
         display: flex;
-        justify-content: space-between;
-        width: 1100px;
-        height: 117px;
-        margin-top: 30px;
-        margin-bottom: 108px;
+        background-color: #f7f7f7;
+    }
 
-        .interesting_information_block_1 {
-            display: flex;
-            width: 353px;
+    @media (max-width: 767px) {
+        &__item {
+            flex-direction: column;
+        }
+    }
+
+    &__books {
+    }
+}
+
+.item-info {
+    &__icon {
+        img {
             height: 117px;
-            background-color: #f7f7f7;
-            .interesting_information_img {
-                width: 117px;
-                height: 117px;
-                img {
-                    width: 117px;
-                }
-            }
-            .interesting_information_text_and_btn {
-                margin: 0 auto;
-                text-align: center;
-                .interesting_information_text {
-                    h3 {
-                        font-family: $font_Satisfy;
-                        font-size: 36px;
-                        margin-top: 26px;
-                        margin-bottom: 7px;
-                    }
-                }
-                .interesting_information_btn {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    .inf_btn {
-                        display: flex;
-                        align-items: center;
-                        text-transform: uppercase;
-                        font-weight: 500;
-                        font-size: 12px;
-                        letter-spacing: 3px;
-                        color: rgb(48, 48, 48);
-                        font-family: 'Open Sans', sans-serif;
-                        transition: 0.3s linear;
-                    }
-                    .inf_btn:hover {
-                        color: rgb(101, 101, 101);
+        }
+    }
 
-                        cursor: pointer;
-                    }
-                    .inf_btn::after {
-                        content: '';
-                        background: url('/assets/interesting_information_arrow-right.svg')
-                            no-repeat;
-                        width: 17px;
-                        height: 17px;
-                        margin-left: 9px;
-                    }
-                }
+    @media (max-width: 767px) {
+        &__icon {
+            img {
+                height: 100%;
+                width: 100%;
             }
         }
+    }
 
-        .interesting_information_block_2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 353px;
-            height: 117px;
-            background-size: 353px 117px;
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
 
-            .interesting_information_border {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 342px;
-                height: 105px;
-                border: 1px solid white;
-                .interesting_information_text {
-                    h3 {
-                        font-family: $font_Merriweather;
-                        font-size: 28px;
-                        font-weight: 400;
-                        color: white;
-                    }
-                }
-            }
+    @media (max-width: 767px) {
+        &__body {
+            margin: 50px auto;
         }
+    }
 
-        .interesting_information_block_3 {
-            display: flex;
-            width: 353px;
-            height: 117px;
-            background-color: #f7f7f7;
-            background-color: #f7f7f7;
-            .interesting_information_img {
-                width: 117px;
-                height: 117px;
-                img {
-                    width: 117px;
-                    height: 117px;
-                }
-            }
-            .interesting_information_text_and_btn {
-                margin: 0 auto;
-                text-align: center;
-                .interesting_information_text {
-                    h3 {
-                        font-family: $font_Satisfy;
-                        font-size: 36px;
-                        margin-top: 26px;
-                        margin-bottom: 7px;
-                    }
-                }
-                .interesting_information_btn {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    .inf_btn {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        text-transform: uppercase;
-                        font-weight: 500;
-                        font-size: 12px;
-                        letter-spacing: 3px;
-                        color: rgb(48, 48, 48);
-                        font-family: 'Open Sans', sans-serif;
-                        transition: 0.3s linear;
-                    }
-                    .inf_btn:hover {
-                        color: rgb(101, 101, 101);
+    &__title {
+        text-align: center;
+        font-family: 'satisfy';
+        font-size: 36px;
+        color: #080808;
+        line-height: 166%;
+    }
 
-                        cursor: pointer;
-                    }
-                    .inf_btn::after {
-                        content: '';
-                        background: url('/assets/interesting_information_arrow-right.svg')
-                            no-repeat;
-                        width: 17px;
-                        height: 17px;
-                        margin-left: 9px;
-                    }
-                }
-            }
+    @media (max-width: 480px) {
+        &__title {
+            font-size: 36px;
         }
+    }
+
+    &__link {
+        a {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
+            color: #303030;
+        }
+        img {
+            width: 17px;
+            height: 17px;
+            margin: -1px 0 0 0;
+        }
+    }
+}
+
+.published-books {
+    background: url('/assets/info-2.jpg') no-repeat;
+    padding: 0 30px;
+    flex: 0 1 33.333%;
+    &__body {
+    }
+
+    &__title {
     }
 }

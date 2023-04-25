@@ -1,60 +1,54 @@
-import interesting_information_img_1 from 'assets/interesting_information_img_1.jpg'
-import interesting_information_img_2 from 'assets/interesting_information_img_2.jpg'
+import info1 from 'assets/info-1.jpg'
+import info3 from 'assets/info-3.jpg'
+import infoArrow from 'assets/info-arrow-right.svg'
 import './InterestingInformation.scss'
-import './Reset.scss'
 
 type Props = {}
 const InterestingInformation = (props: Props) => {
     return (
-        <div className="interesting_information">
-            <div className="interesting_information_block_1">
-                <div className="interesting_information_img">
-                    <img
-                        src={interesting_information_img_1}
-                        alt="interesting information img 1"
-                    />
-                </div>
-
-                <div className="interesting_information_text_and_btn">
-                    <div className="interesting_information_text">
-                        <h3>latest articles</h3>
+        <div className="page__info info">
+            <div className="info__container container">
+                <div className="info__body">
+                    <div className="info__column">
+                        <div className="info__item item-info">
+                            <div className="item-info__icon">
+                                <img src={info1} alt="latest articles" />
+                            </div>
+                            <div className="item-info__body">
+                                <h2 className="item-info__title">
+                                    latest articles
+                                </h2>
+                                <div className="item-info__link">
+                                    <a href="">view more</a>
+                                    <img src={infoArrow} alt="" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div className="interesting_information_btn">
-                        <p className="inf_btn">view more</p>
+                    <div className="info__column">
+                        <div className="info__item item-info">
+                            <div className="item-info__body">
+                                <h2 className="item-info__title">
+                                    Published Books
+                                </h2>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div
-                className="interesting_information_block_2"
-                style={{
-                    backgroundImage:
-                        'url(/images/interesting_information_img_3.jpg)',
-                }}
-            >
-                <div className="interesting_information_border">
-                    <div className="interesting_information_text">
-                        <h3>Published Books</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div className="interesting_information_block_3">
-                <div className="interesting_information_img">
-                    <img
-                        src={interesting_information_img_2}
-                        alt="interesting information img 2"
-                    />
-                </div>
-
-                <div className="interesting_information_text_and_btn">
-                    <div className="interesting_information_text">
-                        <h3>about author</h3>
-                    </div>
-
-                    <div className="interesting_information_btn">
-                        <p className="inf_btn">read more</p>
+                    <div className="info__column">
+                        <div className="info__item item-info">
+                            <div className="item-info__icon">
+                                <img src={info3} alt="latest articles" />
+                            </div>
+                            <div className="item-info__body">
+                                <h2 className="item-info__title">
+                                    about author
+                                </h2>
+                                <div className="item-info__link">
+                                    <a href="">read more</a>
+                                    <img src={infoArrow} alt="" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

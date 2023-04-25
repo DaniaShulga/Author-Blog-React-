@@ -1,0 +1,60 @@
+.books {
+    &__title {
+        color: #080808;
+        font-family: 'Merriweather';
+        font-size: 40px;
+        margin: 0 0 40px 0;
+    }
+
+    &__body {
+        display: flex;
+        margin: 0 -12px;
+    }
+    @media (max-width: 1000px) {
+        &__body {
+            flex-wrap: wrap;
+        }
+    }
+    &__columnHome {
+        width: 185px;
+        text-align: center;
+        padding: 0 12px;
+    }
+    @media (max-width: 1000px) {
+        &__columnHome {
+            width: 264px;
+            margin: 0 0 60px 0;
+        }
+    }
+    @media (max-width: 767px) {
+        &__columnHome {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        &__columnHome {
+            width: 100%;
+        }
+    }
+
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__name {
+        margin: 15px 0;
+        font-family: 'Merriweather';
+        font-size: 17px;
+        a {
+            color: #080808;
+        }
+    }
+
+    &__price {
+        color: #656565;
+        font-size: 16px;
+    }
+}

@@ -1,15 +1,16 @@
-import header_logo from 'assets/header_logo.png'
-import MenuItem from 'components/Menu/MenuItem'
 import './Logo.scss'
+import logo from 'assets/logo.png'
 
 type Props = {}
 const Logo = (props: Props) => {
     return (
-        <div className="logo_wrapper">
-            <div className="logo_img">
-                <MenuItem to="/">
-                    <img src={header_logo} alt="header logo" />
-                </MenuItem>
+        <div className="page__logo logo">
+            <div className="logo__container container">
+                <div className="logo__img">
+                    <a href="">
+                        <img src={logo} alt="logo" />
+                    </a>
+                </div>
             </div>
         </div>
     )

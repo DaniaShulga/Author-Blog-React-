@@ -1,6 +1,30 @@
 .menu-item-active {
     color: #cecece;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 150%;
 }
-.menu-item {
-    color: white;
+@media (max-width: 767px) {
+    .menu-item-active {
+        font-size: 20px;
+    }
+}
+
+.menu__link {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 150%;
+    transition: all 0.3s ease 0s;
+    flex: 1 1 auto;
+}
+.menu__link:hover {
+    color: #cecece;
+}
+@media (max-width: 767px) {
+    .menu__link {
+        font-size: 20px;
+    }
 }
