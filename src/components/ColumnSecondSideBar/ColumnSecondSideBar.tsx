@@ -31,17 +31,26 @@ const ColumnSecondSideBar = (props: Props) => {
                     </div>
                     <ul className="author__list">
                         <li className="author__item">
-                            <a href="" className="author__link">
+                            <a
+                                href="https://twitter.com/QodeInteractive"
+                                className="author__link"
+                            >
                                 <img src={twitterIconBlack} alt="" />
                             </a>
                         </li>
                         <li className="author__item">
-                            <a href="" className="author__link">
+                            <a
+                                href="https://www.facebook.com/QodeInteractive/"
+                                className="author__link"
+                            >
                                 <img src={facebookIconBlack} alt="" />
                             </a>
                         </li>
                         <li className="author__item">
-                            <a href="" className="author__link">
+                            <a
+                                href="https://www.instagram.com/qodeinteractive/"
+                                className="author__link"
+                            >
                                 <img src={instagramIconBlack} alt="" />
                             </a>
                         </li>
@@ -53,13 +62,13 @@ const ColumnSecondSideBar = (props: Props) => {
                 <div className="latestPosts__body">
                     <div className="latestPosts__block">
                         <div className="latestPosts__img">
-                            <a href="#">
+                            <a href="/">
                                 <img src={latestPostImg1} alt="" />
                             </a>
                         </div>
                         <div className="latestPosts__inf">
                             <div className="latestPosts__titleBlock">
-                                <a href="#">Active and Passive Voice</a>
+                                <a href="/">Active and Passive Voice</a>
                             </div>
                             <div className="latestPosts__date">
                                 <p>20 FEBRUARY, 2020</p>
@@ -68,13 +77,13 @@ const ColumnSecondSideBar = (props: Props) => {
                     </div>
                     <div className="latestPosts__block">
                         <div className="latestPosts__img">
-                            <a href="#">
+                            <a href="/">
                                 <img src={latestPostImg2} alt="" />
                             </a>
                         </div>
                         <div className="latestPosts__inf">
                             <div className="latestPosts__titleBlock">
-                                <a href="#">23 Ways to Improve Your Draft</a>
+                                <a href="/">23 Ways to Improve Your Draft</a>
                             </div>
                             <div className="latestPosts__date">
                                 <p>20 FEBRUARY, 2020</p>
@@ -83,13 +92,13 @@ const ColumnSecondSideBar = (props: Props) => {
                     </div>
                     <div className="latestPosts__block">
                         <div className="latestPosts__img">
-                            <a href="#">
+                            <a href="/">
                                 <img src={latestPostImg3} alt="" />
                             </a>
                         </div>
                         <div className="latestPosts__inf">
                             <div className="latestPosts__titleBlock">
-                                <a href="#">
+                                <a href="/">
                                     Advice for Writing Personal Statements
                                 </a>
                             </div>
@@ -100,13 +109,13 @@ const ColumnSecondSideBar = (props: Props) => {
                     </div>
                     <div className="latestPosts__block">
                         <div className="latestPosts__img">
-                            <a href="#">
+                            <a href="/">
                                 <img src={latestPostImg4} alt="" />
                             </a>
                         </div>
                         <div className="latestPosts__inf">
                             <div className="latestPosts__titleBlock">
-                                <a href="#">
+                                <a href="/">
                                     Good writing is like a windowpane.
                                 </a>
                             </div>
@@ -121,37 +130,37 @@ const ColumnSecondSideBar = (props: Props) => {
                 <div className="categories__title">Categories</div>
                 <ul className="categories__list">
                     <li className="categories__item">
-                        <a href="#" className="categories__link">
+                        <a href="/" className="categories__link">
                             ART
                         </a>
                     </li>
                     <li className="categories__item">
-                        <a href="#" className="categories__link">
+                        <a href="/" className="categories__link">
                             BOOKS
                         </a>
                     </li>
                     <li className="categories__item">
-                        <a href="#" className="categories__link">
+                        <a href="/" className="categories__link">
                             CREATION
                         </a>
                     </li>
                     <li className="categories__item">
-                        <a href="#" className="categories__link">
+                        <a href="/" className="categories__link">
                             KNOWLEDGE
                         </a>
                     </li>
                     <li className="categories__item">
-                        <a href="#" className="categories__link">
+                        <a href="/" className="categories__link">
                             RECOMMENDATIONS
                         </a>
                     </li>
                     <li className="categories__item">
-                        <a href="#" className="categories__link">
+                        <a href="/" className="categories__link">
                             WISDOM
                         </a>
                     </li>
                     <li className="categories__item">
-                        <a href="#" className="categories__link">
+                        <a href="/" className="categories__link">
                             WRITING
                         </a>
                     </li>
@@ -161,42 +170,42 @@ const ColumnSecondSideBar = (props: Props) => {
                 <div className="tags__title">Tags</div>
                 <ul className="tags__list">
                     <li className="tags__item">
-                        <a href="#" className="tags__link">
+                        <a href="/" className="tags__link">
                             ADVICE,
                         </a>
                     </li>
                     <li className="tags__item">
-                        <a href="#" className="tags__link">
+                        <a href="/" className="tags__link">
                             ART,
                         </a>
                     </li>
                     <li className="tags__item">
-                        <a href="#" className="tags__link">
+                        <a href="/" className="tags__link">
                             BOOKS,
                         </a>
                     </li>
                     <li className="tags__item">
-                        <a href="#" className="tags__link">
+                        <a href="/" className="tags__link">
                             INSPO,
                         </a>
                     </li>
                     <li className="tags__item">
-                        <a href="#" className="tags__link">
+                        <a href="/" className="tags__link">
                             LISTS,
                         </a>
                     </li>
                     <li className="tags__item">
-                        <a href="#" className="tags__link">
+                        <a href="/" className="tags__link">
                             NEW,
                         </a>
                     </li>
                     <li className="tags__item">
-                        <a href="#" className="tags__link">
+                        <a href="/" className="tags__link">
                             SUGESTIONS,
                         </a>
                     </li>
                     <li className="tags__item">
-                        <a href="#" className="tags__link">
+                        <a href="/" className="tags__link">
                             WRITING
                         </a>
                     </li>

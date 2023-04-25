@@ -1,12 +1,6 @@
 import Logo from 'components/Logo/Logo'
 import './About.scss'
 import aboutImg from 'assets/about-img.jpg'
-import book1 from 'assets/book1.jpg'
-import book2 from 'assets/book2.jpg'
-import book3 from 'assets/book3.jpg'
-import book4 from 'assets/book4.jpg'
-import book5 from 'assets/book5.jpg'
-import book6 from 'assets/book6.jpg'
 import BooksAbout from 'components/BooksAbout/BooksAbout'
 
 type Props = {}

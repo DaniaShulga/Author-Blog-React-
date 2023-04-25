@@ -15,67 +15,67 @@ const BooksAbout = (props: Props) => {
                 <div className="books__bodyAbout">
                     <div className="books__column">
                         <div className="books__imgAbout">
-                            <a href="">
+                            <a href="/">
                                 <img src={book1} alt="" />
                             </a>
                         </div>
                         <div className="books__nameAbout">
-                            <a href="">To Run Away</a>
+                            <a href="/">To Run Away</a>
                         </div>
                         <div className="books__priceAbout">$55.00</div>
                     </div>
                     <div className="books__column">
                         <div className="books__img">
-                            <a href="">
+                            <a href="/">
                                 <img src={book2} alt="" />
                             </a>
                         </div>
                         <div className="books__name">
-                            <a href="#">Moody Nights</a>
+                            <a href="/">Moody Nights</a>
                         </div>
                         <div className="books__price">$65.00</div>
                     </div>
                     <div className="books__column">
                         <div className="books__img">
-                            <a href="">
+                            <a href="/">
                                 <img src={book3} alt="" />
                             </a>
                         </div>
                         <div className="books__name">
-                            <a href="#">Scratch the surface</a>
+                            <a href="/">Scratch the surface</a>
                         </div>
                         <div className="books__price">$70.00</div>
                     </div>
                     <div className="books__column">
                         <div className="books__img">
-                            <a href="">
+                            <a href="/">
                                 <img src={book4} alt="" />
                             </a>
                         </div>
                         <div className="books__name">
-                            <a href="#">Love and others</a>
+                            <a href="/">Love and others</a>
                         </div>
                         <div className="books__price">$60.00</div>
                     </div>
                     <div className="books__column">
                         <div className="books__img">
-                            <a href="">
+                            <a href="/">
                                 <img src={book5} alt="" />
                             </a>
                         </div>
                         <div className="books__name">
-                            <a href="#">Net of Lies</a>
+                            <a href="/">Net of Lies</a>
                         </div>
                         <div className="books__price">$75.00</div>
                     </div>
                     <div className="books__column">
                         <div className="books__img">
-                            <a href="">
+                            <a href="/">
                                 <img src={book6} alt="" />
                             </a>
                         </div>
                         <div className="books__name">
-                            <a href="#">Story of a Girl</a>
+                            <a href="/">Story of a Girl</a>
                         </div>
                         <div className="books__price">$45.00</div>
                     </div>

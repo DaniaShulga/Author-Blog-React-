@@ -1,6 +1,6 @@
 import articlesArray, { getArticlesObject } from 'utils/articlesArray'
 import './BlogPage.scss'
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 
 type Props = {
     articlesObject?: {
@@ -10,9 +10,9 @@ type Props = {
 const BlogPage = ({
     articlesObject = getArticlesObject(articlesArray),
 }: Props) => {
-    const { id } = useParams()
+    // const { id } = useParams()
 
-    const article = articlesObject[parseInt(id!)]
+    // const article = articlesObject[parseInt(id!)]
     return <div>CurrentPage</div>
 }
 export default BlogPage
