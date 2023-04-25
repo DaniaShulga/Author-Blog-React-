@@ -4,6 +4,7 @@ import tumblrIcon from 'assets/tumblr_icon.svg'
 import twitterIcon from 'assets/twitter_icon.svg'
 import facebookIcon from 'assets/facebook_icon.svg'
 import instagramIcon from 'assets/instagram_icon.svg'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 const Footer = (props: Props) => {
@@ -11,62 +12,73 @@ const Footer = (props: Props) => {
         <footer className="footer">
             <div className="footer__container container">
                 <div className="footer__logo">
-                    <a href="#">
+                    <a href="/">
                         <img src={footerLogo} alt="" />
                     </a>
                 </div>
                 <ul className="footer__list">
                     <li className="footer__item">
-                        <a href="#" className="footer__link">
+                        <Link to="/" className="footer__link">
                             home
-                        </a>
+                        </Link>
                     </li>
                     <li className="footer__item">
-                        <a href="#" className="footer__link">
+                        <Link to="/about" className="footer__link">
                             about
-                        </a>
+                        </Link>
                     </li>
                     <li className="footer__item">
-                        <a href="#" className="footer__link">
+                        <Link to="/articles" className="footer__link">
                             articles
-                        </a>
+                        </Link>
                     </li>
                     <li className="footer__item">
-                        <a href="#" className="footer__link">
+                        <Link to="/" className="footer__link">
                             books
-                        </a>
+                        </Link>
                     </li>
                     <li className="footer__item">
-                        <a href="#" className="footer__link">
+                        <Link to="/contact" className="footer__link">
                             contact
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <ul className="footer__widgetsList">
                     <li className="footer__widgetsItem">
-                        <a href="#" className="footer__widgetsLink">
+                        <a href="/" className="footer__widgetsLink">
                             <img src={tumblrIcon} alt="" />
                         </a>
                     </li>
                     <li className="footer__widgetsItem">
-                        <a href="#" className="footer__widgetsLink">
+                        <a
+                            href="https://twitter.com/QodeInteractive"
+                            className="footer__widgetsLink"
+                        >
                             <img src={twitterIcon} alt="" />
                         </a>
                     </li>
                     <li className="footer__widgetsItem">
-                        <a href="#" className="footer__widgetsLink">
+                        <a
+                            href="https://www.facebook.com/QodeInteractive/"
+                            className="footer__widgetsLink"
+                        >
                             <img src={facebookIcon} alt="" />
                         </a>
                     </li>
                     <li className="footer__widgetsItem">
-                        <a href="#" className="footer__widgetsLink">
+                        <a
+                            href="https://www.instagram.com/qodeinteractive/"
+                            className="footer__widgetsLink"
+                        >
                             <img src={instagramIcon} alt="" />
                         </a>
                     </li>
                 </ul>
                 <div className="footer__copyright">
                     <p>
-                        <a href="#">Copyright @ Qode Interactive 2019</a>
+                        <a href="https://qodeinteractive.com/?_ga=2.23943546.1592841558.1682345192-1516393312.1682186901">
+                            Copyright @ Qode Interactive 2019
+                        </a>
                     </p>
                 </div>
             </div>

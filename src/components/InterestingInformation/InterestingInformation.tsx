@@ -19,7 +19,7 @@ const InterestingInformation = (props: Props) => {
                                     latest articles
                                 </h2>
                                 <div className="item-info__link">
-                                    <a href="">view more</a>
+                                    <a href="/">view more</a>
                                     <img src={infoArrow} alt="" />
                                 </div>
                             </div>
@@ -44,7 +44,7 @@ const InterestingInformation = (props: Props) => {
                                     about author
                                 </h2>
                                 <div className="item-info__link">
-                                    <a href="">read more</a>
+                                    <a href="/">read more</a>
                                     <img src={infoArrow} alt="" />
                                 </div>
                             </div>

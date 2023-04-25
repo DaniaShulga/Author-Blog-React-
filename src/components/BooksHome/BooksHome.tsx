@@ -12,45 +12,45 @@ const BooksHome = (props: Props) => {
             <div className="books__body">
                 <div className="books__columnHome">
                     <div className="books__img">
-                        <a href="">
+                        <a href="/">
                             <img src={book1} alt="" />
                         </a>
                     </div>
                     <div className="books__name">
-                        <a href="">To Run Away</a>
+                        <a href="/">To Run Away</a>
                     </div>
                     <div className="books__price">$55.00</div>
                 </div>
                 <div className="books__columnHome">
                     <div className="books__img">
-                        <a href="">
+                        <a href="/">
                             <img src={book2} alt="" />
                         </a>
                     </div>
                     <div className="books__name">
-                        <a href="#">Moody Nights</a>
+                        <a href="/">Moody Nights</a>
                     </div>
                     <div className="books__price">$65.00</div>
                 </div>
                 <div className="books__columnHome">
                     <div className="books__img">
-                        <a href="">
+                        <a href="/">
                             <img src={book3} alt="" />
                         </a>
                     </div>
                     <div className="books__name">
-                        <a href="#">Scratch the surface</a>
+                        <a href="/">Scratch the surface</a>
                     </div>
                     <div className="books__price">$70.00</div>
                 </div>
                 <div className="books__columnHome">
                     <div className="books__img">
-                        <a href="">
+                        <a href="/">
                             <img src={book4} alt="" />
                         </a>
                     </div>
                     <div className="books__name">
-                        <a href="#">Love and others</a>
+                        <a href="/">Love and others</a>
                     </div>
                     <div className="books__price">$60.00</div>
                 </div>

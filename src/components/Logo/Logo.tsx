@@ -7,7 +7,7 @@ const Logo = (props: Props) => {
         <div className="page__logo logo">
             <div className="logo__container container">
                 <div className="logo__img">
-                    <a href="">
+                    <a href="/">
                         <img src={logo} alt="logo" />
                     </a>
                 </div>
