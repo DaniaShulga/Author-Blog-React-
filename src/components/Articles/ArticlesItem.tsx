@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom'
+import LikeIconEmpty from 'assets/like_icon.svg'
+import LikeIconFull from 'assets/like_icon_black.svg'
+import { useAppDispatch, useAppSelector } from 'redux/hooks'
+import { toggleLike } from 'redux/likeReducer'
 
 type Props = {
     title: string
@@ -16,6 +20,8 @@ const ArticlesItem = ({
     category,
     id,
 }: Props) => {
+    const isLiked = useAppSelector((state) => state.productsLike[id])
+    const dispatch = useAppDispatch()
     return (
         <div className="column-first__blog">
             <div className="column-first__img">
@@ -30,6 +36,28 @@ const ArticlesItem = ({
                     </Link>
                 </div>
                 <div className="column-first__textArticles">{description}</div>
+                <div
+                    className="column-first__categoryAndLike"
+                    onClick={() => {
+                        dispatch(toggleLike(id))
+                    }}
+                >
+                    <div className="column-first__category">
+                        <Link to={`/${category}`}>{category}</Link>
+                    </div>
+                    <div className="column-first__likeImg">
+                        {isLiked ? (
+                            <img src={LikeIconFull} alt="" className="like_1" />
+                        ) : (
+                            <img
+                                src={LikeIconEmpty}
+                                alt=""
+                                className="like_2"
+                            />
+                        )}
+                    </div>
+                </div>
+
                 <div className="column-first__date">{date}</div>
             </div>
         </div>

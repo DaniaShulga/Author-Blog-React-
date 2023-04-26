@@ -113,3 +113,17 @@ body._touch .menu__list > li._active .menu__arrow {
         width: 100%;
     }
 }
+
+.posts {
+    &__bodyFavourites {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    @media (max-width: 1000px) {
+        &__bodyFavourites {
+            flex-wrap: wrap;
+        }
+    }
+}

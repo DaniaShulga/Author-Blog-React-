@@ -12,9 +12,9 @@ const Footer = (props: Props) => {
         <footer className="footer">
             <div className="footer__container container">
                 <div className="footer__logo">
-                    <a href="/">
+                    <Link to={'/'}>
                         <img src={footerLogo} alt="" />
-                    </a>
+                    </Link>
                 </div>
                 <ul className="footer__list">
                     <li className="footer__item">

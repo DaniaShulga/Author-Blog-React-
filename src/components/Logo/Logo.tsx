@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Logo.scss'
 import logo from 'assets/logo.png'
 
@@ -7,9 +8,9 @@ const Logo = (props: Props) => {
         <div className="page__logo logo">
             <div className="logo__container container">
                 <div className="logo__img">
-                    <a href="/">
+                    <Link to={'/'}>
                         <img src={logo} alt="logo" />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,0 +1,125 @@
+.posts {
+    &__container {
+    }
+
+    &__bodyArticlesMenu {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 55px 0;
+    }
+
+    @media (max-width: 1000px) {
+        &__bodyArticlesMenu {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__column-first {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 1 66.666%;
+        margin: 0 -10px;
+    }
+
+    @media (max-width: 1000px) {
+        &__column-first {
+            flex: 0 1 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__column-second {
+        flex: 0 1 33.333%;
+    }
+    @media (max-width: 1000px) {
+        &__column-second {
+            flex: 0 1 100%;
+        }
+    }
+    &__column-second {
+        padding: 0 0 0 50px;
+    }
+    @media (max-width: 1000px) {
+        &__column-second {
+            padding: 0;
+        }
+    }
+}
+
+.column-first {
+    &__articles {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__blog {
+        width: 50%;
+        padding: 0 10px;
+        margin: 0 0 61px 0;
+    }
+
+    @media (max-width: 600px) {
+        &__blog {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        &__blog {
+            padding: 0;
+        }
+    }
+
+    &__img {
+        overflow: hidden;
+        img {
+            width: 100%;
+            transition: transform 0.25s;
+        }
+    }
+    &__img:hover img {
+        transform: scale(1.1);
+    }
+
+    &__body {
+    }
+
+    &__title {
+        font-size: 27px;
+        font-family: 'Merriweather';
+        line-height: 37px;
+        margin: 15px 0 0 0;
+        a {
+            color: #080808;
+        }
+    }
+
+    &__textArticles {
+        margin: 10px 0 26px;
+        color: #656565;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__date {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 13px;
+        color: #656565;
+    }
+
+    &__newsletter {
+    }
+
+    &__books {
+        width: 100%;
+        margin: 0 0 140px 0;
+    }
+
+    @media (max-width: 1000px) {
+        &__books {
+            margin: 0;
+        }
+    }
+}
