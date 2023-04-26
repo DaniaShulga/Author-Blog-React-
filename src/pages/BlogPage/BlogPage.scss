@@ -1,0 +1,492 @@
+.page {
+    flex: 1 1 auto;
+    &__logo {
+        margin: 50px 0 8px 0;
+        height: 108px;
+    }
+    &__info {
+    }
+    &__posts {
+    }
+}
+.logo {
+    &__container {
+    }
+
+    &__img {
+        text-align: center;
+        img {
+            width: 288px;
+            height: 80px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &__img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.posts {
+    &__container {
+    }
+
+    &__bodyBlogPage {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0 0 0;
+    }
+
+    @media (max-width: 1000px) {
+        &__bodyBlogPage {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__column-first {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 1 66.666%;
+        margin: 0 -10px;
+    }
+
+    @media (max-width: 1000px) {
+        &__column-first {
+            flex: 0 1 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__column-second {
+        flex: 0 1 33.333%;
+    }
+    @media (max-width: 1000px) {
+        &__column-second {
+            flex: 0 1 100%;
+        }
+    }
+    &__column-second {
+        padding: 0 0 0 50px;
+    }
+    @media (max-width: 1000px) {
+        &__column-second {
+            padding: 0;
+        }
+    }
+}
+
+.column-first {
+    &__articles {
+    }
+
+    &__image {
+        width: 100%;
+        margin: 0 0 40px 0;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+    }
+
+    &__titleBlog {
+        font-size: 40px;
+        color: #080808;
+        font-family: 'Merriweather';
+        line-height: 50px;
+        letter-spacing: 0.3px;
+    }
+
+    &__postedAt {
+        font-size: 13px;
+        line-height: 23px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #656565;
+        margin: 15px 0 25px 0;
+    }
+
+    &__text {
+        margin: 0 0 60px 0;
+    }
+
+    &__text p:nth-child(1) {
+        color: #656565;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__text p:nth-child(2) {
+        color: #656565;
+        font-size: 20px;
+        line-height: 29px;
+        margin: 20px 0 20px 0;
+    }
+
+    &__text p:nth-child(3) {
+        color: #656565;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__commentsBlock {
+    }
+
+    &__commentsCount {
+        font-family: 'Merriweather';
+        font-size: 28px;
+        color: #080808;
+        margin: 0 0 40px 0;
+    }
+
+    &__comments {
+        display: flex;
+        margin: 0 0 40px 0;
+    }
+    @media (max-width: 767px) {
+        &__comments {
+            border-bottom: 1px solid #cecece;
+        }
+    }
+
+    &__commentsImg {
+        margin: 0 25px 0 0;
+        img {
+            border-radius: 75px;
+        }
+    }
+
+    &__commentsInf {
+    }
+
+    &__user {
+        font-family: 'Merriweather';
+        font-size: 17px;
+    }
+
+    &__data {
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #656565;
+        margin: 10px 0;
+    }
+
+    &__commentWrite {
+        color: #656565;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 0 70px 0;
+    }
+    @media (max-width: 600px) {
+        &__commentWrite {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    &__label {
+        color: #080808;
+        font-size: 28px;
+        font-family: 'Merriweather';
+    }
+
+    &__textarea {
+        display: block;
+        width: 100%;
+        border: 1px solid black;
+        resize: none;
+        font-size: 16px;
+        padding: 16px 0 0 26px;
+        color: #656565;
+        margin: 12px 0 15px 0;
+    }
+
+    &__inputs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__name {
+        border: 1px solid black;
+        width: 32%;
+        height: 45px;
+        color: #656565;
+        font-size: 16px;
+        padding: 0 0 0 26px;
+    }
+
+    @media (max-width: 600px) {
+        &__name {
+            width: 100%;
+        }
+    }
+
+    &__email {
+        border: 1px solid black;
+        width: 32%;
+        height: 45px;
+        color: #656565;
+        font-size: 16px;
+        padding: 0 0 0 26px;
+    }
+
+    @media (max-width: 600px) {
+        &__email {
+            width: 100%;
+            margin: 15px 0;
+        }
+    }
+
+    &__website {
+        border: 1px solid black;
+        width: 32%;
+        height: 45px;
+        color: #656565;
+        font-size: 16px;
+        padding: 0 0 0 26px;
+    }
+
+    @media (max-width: 600px) {
+        &__website {
+            width: 100%;
+        }
+    }
+
+    &__commentCheckbox {
+        display: block;
+        margin: 30px 0 15px 0;
+        input {
+            margin: 0 5px 0 0;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: flex-end;
+        button {
+            width: 23%;
+            height: 55px;
+            color: #fff;
+            background-color: #080808;
+            border: 1px solid #080808;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease 0s;
+        }
+
+        @media (max-width: 600px) {
+            button {
+                width: 22%;
+                height: 40px;
+            }
+        }
+        @media (max-width: 480px) {
+            button {
+                width: 30%;
+                height: 40px;
+            }
+        }
+
+        button:hover {
+            background-color: #333333;
+        }
+    }
+}
+
+.column-second {
+    &__search {
+        display: flex;
+        width: 100%;
+        border: 1px solid #000;
+        input {
+            width: 100%;
+            padding: 0 0 0 20px;
+            color: #656565;
+        }
+        input::placeholder {
+            color: #656565;
+            font-size: 16px;
+        }
+        button {
+            width: 55px;
+            height: 50px;
+            background-color: #000;
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+    &__author {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 487px;
+        background-color: #f7f7f7;
+        margin: 60px 0 0 0;
+    }
+    &__latestPosts {
+        margin: 50px 0 60px 0;
+    }
+    &__categories {
+        margin: 0 0 40px 0;
+    }
+    &__tags {
+    }
+}
+
+.author {
+    &__body {
+        text-align: center;
+        width: 63%;
+    }
+    @media (max-width: 1000px) {
+        &__body {
+            width: 79%;
+        }
+    }
+
+    &__img {
+        margin: 0 0 30px 0;
+    }
+
+    &__title {
+        margin: 0 0 20px 0;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        color: #656565;
+        margin: 0 0 35px 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item:not(:last-child) {
+        margin: 0 20px 0 0;
+    }
+
+    &__link {
+        img {
+            width: 13px;
+            height: 13px;
+        }
+    }
+}
+
+.latestPosts {
+    &__title {
+        margin: 0 0 30px 0;
+    }
+
+    &__body {
+    }
+
+    &__block {
+        display: flex;
+        margin: 0 0 20px 0;
+    }
+
+    @media (max-width: 480px) {
+        &__block {
+            margin: 0 0 40px 0;
+        }
+    }
+    &__block:last-child {
+        margin: 0;
+    }
+
+    &__img {
+        width: 95px;
+        height: 95px;
+        margin: 0 20px 0 0;
+        img {
+            width: 95px;
+            height: 95px;
+        }
+    }
+
+    &__inf {
+    }
+
+    &__titleBlock {
+        font-family: 'Merriweather';
+        font-size: 17px;
+        line-height: 26px;
+        margin: 0 0 10px 0;
+        a {
+            color: #000;
+        }
+    }
+
+    &__date {
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        color: #656565;
+    }
+}
+
+.categories {
+    &__title {
+        margin: 0 0 25px 0;
+    }
+
+    &__list {
+    }
+
+    &__item:not(:last-child) {
+        margin: 0 0 13px 0;
+    }
+
+    &__link {
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #656565;
+        transition: all 0.3s ease 0s;
+    }
+    &__link:hover {
+        color: #080808;
+    }
+}
+
+.tags {
+    @media (max-width: 1000px) {
+        margin: 0 0 140px 0;
+    }
+    &__title {
+        margin: 0 0 20px 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin: 0 5px 13px 0;
+    }
+
+    &__link {
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #656565;
+        transition: all 0.3s ease 0s;
+    }
+    &__link:hover {
+        color: #080808;
+    }
+}

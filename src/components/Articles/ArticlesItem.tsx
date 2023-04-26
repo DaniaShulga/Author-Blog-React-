@@ -29,7 +29,7 @@ const ArticlesItem = ({
                         <h2>{title}</h2>
                     </Link>
                 </div>
-                <div className="column-first__text">{description}</div>
+                <div className="column-first__textArticles">{description}</div>
                 <div className="column-first__date">{date}</div>
             </div>
         </div>
