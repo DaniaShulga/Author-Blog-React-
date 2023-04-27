@@ -4,7 +4,7 @@ import LikeIconFull from 'assets/like_icon_black.svg'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { toggleLike } from 'redux/likeReducer'
 
-type Props = {
+type Prop = {
     title: string
     description: string
     date: string
@@ -12,16 +12,17 @@ type Props = {
     category: string
     id: number
 }
-const ArticlesItem = ({
+const CategoriesArtItem = ({
     title,
+    id,
     description,
     date,
     image,
     category,
-    id,
-}: Props) => {
+}: Prop) => {
     const isLiked = useAppSelector((state) => state.productsLike[id])
     const dispatch = useAppDispatch()
+
     return (
         <div className="column-first__blog">
             <div className="column-first__img">
@@ -38,7 +39,7 @@ const ArticlesItem = ({
                 <div className="column-first__textArticles">{description}</div>
                 <div className="column-first__categoryAndLike">
                     <div className="column-first__category">
-                        <Link to={`/${category}`}>{category}</Link>
+                        <p>{category}</p>
                     </div>
                     <div
                         className="column-first__likeImg"
@@ -63,4 +64,4 @@ const ArticlesItem = ({
         </div>
     )
 }
-export default ArticlesItem
+export default CategoriesArtItem

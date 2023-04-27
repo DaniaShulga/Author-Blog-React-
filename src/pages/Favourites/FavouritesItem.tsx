@@ -40,16 +40,16 @@ const FavouritesItem = ({
                         <div className="column-first__textArticles">
                             {description}
                         </div>
-                        <div
-                            className="column-first__categoryAndLike"
-                            onClick={() => {
-                                dispatch(toggleLike(id))
-                            }}
-                        >
+                        <div className="column-first__categoryAndLike">
                             <div className="column-first__category">
                                 <Link to={`/${category}`}>{category}</Link>
                             </div>
-                            <div className="column-first__likeImg">
+                            <div
+                                className="column-first__likeImg"
+                                onClick={() => {
+                                    dispatch(toggleLike(id))
+                                }}
+                            >
                                 {isLiked ? (
                                     <img
                                         src={LikeIconFull}

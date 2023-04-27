@@ -126,4 +126,59 @@ body._touch .menu__list > li._active .menu__arrow {
             flex-wrap: wrap;
         }
     }
+
+    &__bodyCategories {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    @media (max-width: 1000px) {
+        &__bodyCategories {
+            flex-wrap: wrap;
+        }
+    }
+    &__titleFavourites {
+        margin: 0 0 30px 0;
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    &__titleArt {
+        font-size: 26px;
+        margin: 0 0 30px 0;
+        span {
+            font-weight: 600;
+        }
+    }
+    &__titleBooks {
+        font-size: 26px;
+        margin: 0 0 30px 0;
+        span {
+            font-weight: 600;
+        }
+    }
+    &__titleKnowledge {
+        font-size: 26px;
+        margin: 0 0 30px 0;
+        span {
+            font-weight: 600;
+        }
+    }
+    &__titleWriting {
+        font-size: 26px;
+        margin: 0 0 30px 0;
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.column-first {
+    &__category {
+        p {
+            color: #080808;
+            font-size: 18px;
+        }
+    }
 }

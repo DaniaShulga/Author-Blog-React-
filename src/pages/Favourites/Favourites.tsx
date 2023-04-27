@@ -10,6 +10,7 @@ const Favourites = (props: Props) => {
             <Logo />
             <div className="page__posts posts">
                 <div className="posts__container container">
+                    <h2 className="posts__titleFavourites">Favourites</h2>
                     <div className="posts__bodyFavourites">
                         <div className="posts__column-first column-first">
                             <div className="column-first__articles">
