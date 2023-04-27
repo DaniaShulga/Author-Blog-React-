@@ -5,7 +5,6 @@ import facebookIcon from 'assets/facebook_icon.svg'
 import instagramIcon from 'assets/instagram_icon.svg'
 import MenuItem from './MenuItem'
 import { Link } from 'react-router-dom'
-import articlesArray from 'utils/articlesArray'
 
 const Menu = () => {
     function btnBurger(){
