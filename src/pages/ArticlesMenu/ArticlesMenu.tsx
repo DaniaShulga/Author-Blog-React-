@@ -1,6 +1,5 @@
 import Articles from 'components/Articles/Articles'
 import Logo from 'components/Logo/Logo'
-import PostsArticles from 'components/PostsArticles/PostsArticles'
 import './ArticlesMenu.scss'
 import ColumnSecondSideBar from 'components/ColumnSecondSideBar/ColumnSecondSideBar'
 
