@@ -29,10 +29,10 @@ const Home = (props: Props) => {
                         slidesPerView={1}
                         loop
                         navigation
-                        // autoplay={{
-                        //     delay: 3000,
-                        //     disableOnInteraction: false,
-                        // }}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
                         grabCursor={true}
                         pagination={{ clickable: true }}
                         speed={800}
