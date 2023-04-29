@@ -9,3 +9,249 @@
     &__posts {
     }
 }
+// --------SLIDER----------------------------------------------------
+.slider {
+    &__container {
+    }
+    &__swiper {
+        height: 550px;
+        margin: 0 0 30px 0;
+    }
+    &__swiperSlider {
+    }
+}
+
+@media (max-width: 1000px) {
+    .swiper-horizontal {
+        height: 450px;
+    }
+}
+
+@media (max-width: 600px) {
+    .swiper-horizontal {
+        height: 390px;
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-horizontal {
+        height: 281px;
+    }
+}
+
+.slider__block {
+    position: absolute;
+    width: 41%;
+    background-color: #fff;
+    left: 11%;
+    top: 24%;
+    padding: 50px 0 50px 50px;
+}
+
+@media (max-width: 1200px) {
+    .slider__block {
+        width: 28%;
+        padding: 24px 0 40px 26px;
+        left: 21%;
+        top: 38%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .slider__block {
+        width: 34%;
+        padding: 24px 0 40px 26px;
+        left: 17%;
+        top: 33%;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider__block {
+        width: 42%;
+        padding: 24px 0 40px 26px;
+        left: 17%;
+        top: 33%;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider__block {
+        width: 63%;
+        padding: 24px 0 40px 26px;
+        left: 20%;
+        top: 27%;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider__block {
+        width: 92%;
+        padding: 24px 0 40px 26px;
+        left: 4%;
+        top: 19%;
+    }
+}
+
+.slider__body {
+    width: 100%;
+}
+
+.slider__infText {
+    color: #656565;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin: 0 0 15px 0;
+}
+
+@media (max-width: 1200px) {
+    .slider__infText {
+        margin: 0 0 7px 0;
+    }
+}
+
+.slider__title {
+    font-size: 50px;
+    color: #080808;
+    font-family: 'Merriweather';
+    line-height: 55px;
+    margin: 0 0 40px 0;
+}
+
+@media (max-width: 1200px) {
+    .slider__title {
+        font-size: 30px;
+        line-height: 30px;
+        margin: 0 0 30px 0;
+    }
+}
+
+.slider__btn1 {
+    background-color: #080808;
+    color: #fff;
+    padding: 15px 47px;
+    margin: 0 20px 0 0;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.slider__btn1:hover {
+    background-color: #656565;
+}
+
+.slider__btn2 {
+    border: 1px solid #080808;
+    color: #080808;
+    padding: 15px 47px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 1200px) {
+    .slider__btn2 {
+        display: none;
+    }
+}
+
+.slider__btn2:hover {
+    background-color: #080808;
+    color: #fff;
+}
+
+.slider__book {
+    position: absolute;
+    right: 116px;
+    top: 42px;
+}
+
+@media (max-width: 1200px) {
+    .slider__book {
+        position: absolute;
+        width: 24%;
+        right: 176px;
+        top: 135px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .slider__book {
+        position: absolute;
+        width: 24%;
+        right: 110px;
+        top: 113px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .slider__book {
+        position: absolute;
+        width: 24%;
+        right: 84px;
+        top: 140px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .slider__book {
+        display: none;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff !important;
+}
+
+@media (max-width: 1200px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff !important;
+}
+
+.swiper-button-next {
+    right: 30px !important;
+}
+
+.swiper-button-prev {
+    left: 30px !important;
+}
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+        background-color: #fff !important;
+        margin: 0 15px !important;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 12px !important;
+        height: 12px !important;
+    }
+}

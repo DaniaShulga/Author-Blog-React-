@@ -16,6 +16,7 @@ const Menu = () => {
                 menuBody.classList.toggle('_active')
         }
     }
+    
     const isMobile = {
         Android: function () {
             return navigator.userAgent.match(/Android/i)
@@ -59,6 +60,17 @@ const Menu = () => {
         }
     }
 
+
+    const closeMenu = () => {
+        const iconMenu = document.querySelector('.menu__icon') 
+        const menuBody = document.querySelector('.menu__body') 
+        document.body.classList.remove('_lock')
+        iconMenu.classList.remove('_active')
+        menuBody.classList.remove('_active')
+
+        window.scrollTo(0,0)
+    }
+
     
     return (
         <>
@@ -95,16 +107,16 @@ const Menu = () => {
                             <span className="menu__arrow" onClick={addArr}></span>
                             <ul className="menu__sub-list">
                                 <li>
-                                    <Link to="/art" className='menu-link'>art</Link>
+                                    <Link to="/art" className='menu-link' onClick={closeMenu}>art</Link>
                                 </li>
                                 <li>
-                                    <Link to="/books" className='menu-link'>books</Link>                                    
+                                    <Link to="/books" className='menu-link' onClick={closeMenu}>books</Link>                                    
                                 </li>
                                 <li>
-                                    <Link to="/writing" className='menu-link'>writing</Link>
+                                    <Link to="/writing" className='menu-link' onClick={closeMenu}>writing</Link>
                                 </li>
                                 <li>
-                                    <Link to="/knowledge" className='menu-link'>knowledge</Link>
+                                    <Link to="/knowledge" className='menu-link' onClick={closeMenu}>knowledge</Link>
                                 </li>
                             </ul>
                         </li>

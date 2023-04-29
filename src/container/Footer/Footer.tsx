@@ -8,37 +8,60 @@ import { Link } from 'react-router-dom'
 
 type Props = {}
 const Footer = (props: Props) => {
+    const scrollTop = () => {
+        window.scrollTo(0, 0)
+    }
     return (
         <footer className="footer">
             <div className="footer__container container">
                 <div className="footer__logo">
-                    <Link to={'/'}>
+                    <Link to={'/'} onClick={scrollTop}>
                         <img src={footerLogo} alt="" />
                     </Link>
                 </div>
                 <ul className="footer__list">
                     <li className="footer__item">
-                        <Link to="/" className="footer__link">
+                        <Link
+                            to="/"
+                            className="footer__link"
+                            onClick={scrollTop}
+                        >
                             home
                         </Link>
                     </li>
                     <li className="footer__item">
-                        <Link to="/about" className="footer__link">
+                        <Link
+                            to="/about"
+                            className="footer__link"
+                            onClick={scrollTop}
+                        >
                             about
                         </Link>
                     </li>
                     <li className="footer__item">
-                        <Link to="/articles" className="footer__link">
+                        <Link
+                            to="/articles"
+                            className="footer__link"
+                            onClick={scrollTop}
+                        >
                             articles
                         </Link>
                     </li>
                     <li className="footer__item">
-                        <Link to="/" className="footer__link">
+                        <Link
+                            to="/"
+                            className="footer__link"
+                            onClick={scrollTop}
+                        >
                             books
                         </Link>
                     </li>
                     <li className="footer__item">
-                        <Link to="/contact" className="footer__link">
+                        <Link
+                            to="/contact"
+                            className="footer__link"
+                            onClick={scrollTop}
+                        >
                             contact
                         </Link>
                     </li>
