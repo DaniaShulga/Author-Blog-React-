@@ -22,18 +22,21 @@ const FavouritesItem = ({
 }: Props) => {
     const isLiked = useAppSelector((state) => state.productsLike[id])
     const dispatch = useAppDispatch()
+    const scrollTop = () => {
+        window.scrollTo(0, 0)
+    }
     return (
         <>
             {isLiked ? (
                 <div className="column-first__blog">
                     <div className="column-first__img">
-                        <Link to={`/blog/${id}`}>
+                        <Link to={`/blog/${id}`} onClick={scrollTop}>
                             <img src={image} alt="" />
                         </Link>
                     </div>
                     <div className="column-first__body">
                         <div className="column-first__title">
-                            <Link to={`/blog/${id}`}>
+                            <Link to={`/blog/${id}`} onClick={scrollTop}>
                                 <h2>{title}</h2>
                             </Link>
                         </div>
@@ -42,7 +45,9 @@ const FavouritesItem = ({
                         </div>
                         <div className="column-first__categoryAndLike">
                             <div className="column-first__category">
-                                <Link to={`/${category}`}>{category}</Link>
+                                <Link to={`/${category}`} onClick={scrollTop}>
+                                    {category}
+                                </Link>
                             </div>
                             <div
                                 className="column-first__likeImg"
